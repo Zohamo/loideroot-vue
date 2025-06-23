@@ -1,0 +1,136 @@
+body {
+  background-color: #f8ecd8;
+  background-image: url(../img/bg_paper.png);
+}
+
+a {
+  color: #b37857;
+  text-decoration: none;
+}
+/* Images & icons */
+.inline-icon {
+  width: 1rem;
+  height: auto;
+}
+.inline-icon-lg {
+  width: 1.5rem !important;
+}
+
+/* Borders */
+.border-double {
+  border: 5px double;
+}
+
+/* Tables */
+.table-bordered > :not(caption) > * > * {
+  border-width: 3px;
+  border-color: #212529;
+}
+.table-bordered > tbody > * > * {
+  background-color: transparent;
+}
+
+/* Sections & Topics */
+main,
+#appendices {
+  counter-reset: section;
+}
+main section,
+#appendices section {
+  counter-reset: subsection;
+}
+main section .subsection > ol,
+#appendices section .subsection > ol {
+  counter-reset: topic;
+}
+main h2::before {
+  counter-increment: section;
+  content: counter(section) '. ';
+}
+#appendices h2::before {
+  counter-increment: section;
+  content: counter(section, upper-alpha) '. ';
+}
+main h3::before {
+  counter-increment: subsection;
+  content: counter(section) '.' counter(subsection) ' ';
+}
+#appendices h3::before {
+  counter-increment: subsection;
+  content: counter(section, upper-alpha) '.' counter(subsection) ' ';
+}
+main .subsection > ol,
+#appendices .subsection > ol {
+  padding-left: 0;
+  list-style-type: none;
+}
+main .subsection > ol > li::before {
+  counter-increment: topic;
+  content: counter(section) '.' counter(subsection) '.' counter(topic) ' ';
+}
+#appendices .subsection > ol > li::before {
+  counter-increment: topic;
+  content: counter(section, upper-alpha) '.' counter(subsection) '.' counter(topic) ' ';
+}
+#index ul {
+  list-style-type: none;
+}
+
+/* Typography */
+body {
+  font-family: 'root-text', serif;
+  text-align: justify;
+}
+em,
+i {
+  font-family: 'root-text-italic', serif;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: 'root-title', serif;
+  font-weight: normal;
+}
+h3 {
+  font-variant: small-caps;
+  font-weight: normal;
+}
+mark {
+  background-color: transparent;
+  font-variant: small-caps;
+}
+i[class^='icon-'] {
+  font-style: normal;
+}
+.text-corvid {
+  color: #8e49aa;
+}
+.text-cult {
+  color: #f7f345;
+}
+.text-duchy {
+  color: #ecc0a3;
+}
+.text-eyrie {
+  color: #4668b7;
+}
+.text-keepers {
+  color: #888687;
+}
+.text-marquise {
+  color: #e16a2b;
+}
+.text-riverfolk {
+  color: #66cbba;
+}
+.text-vagabond {
+  color: #656263;
+}
+.text-warlord {
+  color: #e2173d;
+}
+.text-woodland {
+  color: #5ebd44;
+}
