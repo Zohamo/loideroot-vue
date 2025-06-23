@@ -1,4 +1,5 @@
 import './assets/css/fonts.css'
+import 'primeicons/primeicons.css'
 import './assets/css/main.css'
 
 import { createApp } from 'vue'
@@ -7,6 +8,7 @@ import router from './router'
 import PrimeVue from 'primevue/config'
 import Nora from '@primeuix/themes/nora'
 import { definePreset } from '@primeuix/themes'
+import { Ripple } from 'primevue'
 
 const MyPreset = definePreset(Nora, {
   semantic: {
@@ -45,6 +47,7 @@ const app = createApp(App)
 
 app.use(router)
 app.use(PrimeVue, {
+  ripple: true,
   theme: {
     preset: MyPreset,
     options: {
@@ -52,5 +55,6 @@ app.use(PrimeVue, {
     },
   },
 })
+app.directive('ripple', Ripple)
 
 app.mount('#app')
