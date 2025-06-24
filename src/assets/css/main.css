@@ -30,52 +30,6 @@ a {
   background-color: transparent;
 }
 
-/* Sections & Topics */
-main,
-#appendices {
-  counter-reset: section;
-}
-main section,
-#appendices section {
-  counter-reset: subsection;
-}
-main section .subsection > ol,
-#appendices section .subsection > ol {
-  counter-reset: topic;
-}
-main h2::before {
-  counter-increment: section;
-  content: counter(section) '. ';
-}
-#appendices h2::before {
-  counter-increment: section;
-  content: counter(section, upper-alpha) '. ';
-}
-main h3::before {
-  counter-increment: subsection;
-  content: counter(section) '.' counter(subsection) ' ';
-}
-#appendices h3::before {
-  counter-increment: subsection;
-  content: counter(section, upper-alpha) '.' counter(subsection) ' ';
-}
-main .subsection > ol,
-#appendices .subsection > ol {
-  padding-left: 0;
-  list-style-type: none;
-}
-main .subsection > ol > li::before {
-  counter-increment: topic;
-  content: counter(section) '.' counter(subsection) '.' counter(topic) ' ';
-}
-#appendices .subsection > ol > li::before {
-  counter-increment: topic;
-  content: counter(section, upper-alpha) '.' counter(subsection) '.' counter(topic) ' ';
-}
-#index ul {
-  list-style-type: none;
-}
-
 /* Typography */
 body {
   font-family: 'root-text', serif;
