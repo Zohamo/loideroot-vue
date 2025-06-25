@@ -16,6 +16,7 @@ const section = computed(() => data.find((sec) => sec.id == id))
         <div v-for="subsection in section.subsections" :key="subsection.id" class="subsection">
           <h3 v-html="subsection.title" />
           <p v-if="subsection.text" v-html="subsection.text" />
+          <div v-if="subsection.other" v-html="subsection.other" />
           <ol v-if="subsection.topics?.length">
             <li v-for="topic in subsection.topics" :key="topic.id">
               <strong v-if="topic.title" v-html="topic.title" />
