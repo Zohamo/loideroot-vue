@@ -1,0 +1,81 @@
+@layer base {
+  body {
+    background-color: #f8ecd8;
+    background-image: url(../img/bg_paper.png);
+    font-family: 'root-text', serif;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  main {
+    padding: 0 0.75rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: calc(1.375rem + 1.5vw);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: calc(1.325rem + 0.9vw);
+    font-family: 'root-title', serif;
+    font-weight: normal;
+  }
+  h3 {
+    font-size: calc(1.3rem + 0.6vw);
+    font-variant: small-caps;
+    font-weight: normal;
+  }
+  h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  em,
+  i {
+    font-family: 'root-text-italic', serif;
+  }
+  mark {
+    background-color: transparent;
+    font-variant: small-caps;
+  }
+  a {
+    color: var(--color-amber-700);
+  }
+  p,
+  dl,
+  ol,
+  ul,
+  table {
+    margin-bottom: 1rem;
+  }
+  ul,
+  ol {
+    list-style: revert;
+  }
+  ol,
+  ul {
+    padding-left: 2rem;
+  }
+  th,
+  td {
+    padding: 0.5rem;
+  }
+  thead th,
+  thead td {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+}

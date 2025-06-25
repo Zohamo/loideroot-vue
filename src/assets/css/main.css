@@ -1,12 +1,7 @@
-body {
-  background-color: #f8ecd8;
-  background-image: url(../img/bg_paper.png);
-}
+@import 'tailwindcss';
+@import 'tailwindcss-primeui';
+@import './base.css';
 
-a {
-  color: #b37857;
-  text-decoration: none;
-}
 /* Images & icons */
 .inline-icon {
   width: 1rem;
@@ -31,30 +26,6 @@ a {
 }
 
 /* Typography */
-body {
-  font-family: 'root-text', serif;
-  text-align: justify;
-}
-em,
-i {
-  font-family: 'root-text-italic', serif;
-}
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-}
-h2 {
-  font-family: 'root-title', serif;
-  font-weight: normal;
-}
-h3 {
-  font-variant: small-caps;
-  font-weight: normal;
-}
-mark {
-  background-color: transparent;
-  font-variant: small-caps;
-}
 i[class^='icon-'] {
   font-style: normal;
 }
