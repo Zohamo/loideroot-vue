@@ -27,6 +27,13 @@ const MyPreset = definePreset(Nora, {
     },
   },
   components: {
+    drawer: {
+      colorScheme: {
+        light: {
+          background: '{amber.50}',
+        },
+      },
+    },
     menubar: {
       colorScheme: {
         light: {
@@ -35,7 +42,7 @@ const MyPreset = definePreset(Nora, {
             borderColor: 'none',
           },
           submenu: {
-            background: '#f8ecd8',
+            background: '{amber.50}',
           },
         },
       },

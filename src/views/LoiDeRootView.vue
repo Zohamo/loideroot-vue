@@ -3,7 +3,7 @@ import LoiDeRootSommaire from '../components/LoiDeRootSommaire.vue'
 </script>
 
 <template>
-  <div>
+  <main class="p-4">
     <LoiDeRootSommaire />
     <header>
       <img
@@ -12,36 +12,6 @@ import LoiDeRootSommaire from '../components/LoiDeRootSommaire.vue'
         style="max-width: 100%; margin: 0 auto"
       />
     </header>
-    <div>
-      <h3 class="text-center">Sommaire</h3>
-      <ol>
-        <li><a href="#1">Règles d'or</a></li>
-        <li><a href="#2">Concepts clés</a></li>
-        <li><a href="#3">Victoire</a></li>
-        <li><a href="#4">Actions principales</a></li>
-        <li><a href="#5">Mise en place</a></li>
-        <li><a href="#6">Marquise de Chat</a></li>
-        <li><a href="#7">Dynasties de la Canopée</a></li>
-        <li><a href="#8">Alliance de la Forêt</a></li>
-        <li><a href="#9">Vagabond</a></li>
-        <li><a href="#10">Culte des Lézards</a></li>
-        <li><a href="#11">Compagnie de la Rivière</a></li>
-        <li><a href="#12">Duché Souterrain</a></li>
-        <li><a href="#13">Conspiration des Corvidés</a></li>
-        <li><a href="#14">Seigneur des Cents</a></li>
-        <li><a href="#15">Gardiens de Fer</a></li>
-      </ol>
-      <ul>
-        <li><a href="#A">Appendice A. Mise en place avancée</a></li>
-        <li><a href="#B">Appendice B. Matériel</a></li>
-        <li><a href="#C">Appendice C. Variantes de plateaux</a></li>
-        <li><a href="#D">Appendice D. Vagabonds</a></li>
-        <li><a href="#E">Appendice E. Nomades</a></li>
-        <li><a href="#F">Appendice F. Monuments</a></li>
-        <li><a href="#G">Appendice G. Glossaire</a></li>
-        <li><a href="#index">Index</a></li>
-      </ul>
-    </div>
     <section>
       <h2>Lire la Loi</h2>
       <p>
@@ -109,5 +79,5 @@ import LoiDeRootSommaire from '../components/LoiDeRootSommaire.vue'
         <a href="https://ledergames.com/replacements">ledergames.com/replacements</a>
       </p>
     </section>
-  </div>
+  </main>
 </template>

@@ -1,15 +1,50 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import data from '../assets/json/loi-de-root.json'
-import { useRoute } from 'vue-router'
+import { computed, ref } from 'vue'
+import loiDeRoot from '../assets/json/loi-de-root.json'
+import { onBeforeRouteUpdate, useRoute } from 'vue-router'
+import LoiDeRootSommaire from '@/components/LoiDeRootSommaire.vue'
+import { Button } from 'primevue'
 
-const id = useRoute().params.id
-const section = computed(() => data.find((sec) => sec.id == id))
+const id = ref(useRoute().params.id)
+const currIdx = ref(-1)
+const section = ref(
+  loiDeRoot.find((sec, idx) => {
+    if (sec.id == id.value) {
+      currIdx.value = idx
+      return true
+    }
+    return false
+  }),
+)
+const prev = computed(() =>
+  currIdx.value > 0 && loiDeRoot[currIdx.value - 1] ? loiDeRoot[currIdx.value - 1] : {},
+)
+const next = computed(() =>
+  currIdx.value <= 15 && loiDeRoot[currIdx.value + 1] ? loiDeRoot[currIdx.value + 1] : {},
+)
+const hideSommaire = ref(false)
+
+onBeforeRouteUpdate(async (to, from) => {
+  if (to.params.id !== from.params.id) {
+    id.value = to.params.id
+    section.value = loiDeRoot.find((sec, idx) => {
+      if (sec.id == id.value) {
+        currIdx.value = idx
+        return true
+      }
+      return false
+    })
+  }
+  window.scrollTo(0, 0)
+  hideSommaire.value = true
+})
 </script>
 
 <template>
-  <main :style="`counter-set: section ${id}`">
-    <section>
+  <main class="relative" :style="`counter-set: section ${id}`">
+    <LoiDeRootSommaire :hide="hideSommaire" @hide="hideSommaire = false" />
+    <h1 class="mb-5">La Loi de Root</h1>
+    <section v-if="section">
       <h2 v-html="section.title" />
       <p v-if="section.text" v-html="section.text" />
       <template v-if="section.subsections?.length">
@@ -39,6 +74,24 @@ const section = computed(() => data.find((sec) => sec.id == id))
       </template>
     </section>
   </main>
+  <nav class="px-4 pb-8 flex">
+    <Button v-if="prev?.id" class="mr-auto">
+      <RouterLink v-slot="{ href, navigate }" :to="`/loi-de-root/${prev.id}`" custom>
+        <a v-ripple :href="href" @click="navigate">
+          <i class="pi pi-arrow-left mr-2" />
+          <span v-html="`${prev.id}. ${prev.title}`" />
+        </a>
+      </RouterLink>
+    </Button>
+    <Button v-if="next?.id" class="ml-auto">
+      <RouterLink v-slot="{ href, navigate }" :to="`/loi-de-root/${next.id}`" custom>
+        <a v-ripple :href="href" @click="navigate">
+          <span v-html="`${next.id}. ${next.title}`" />
+          <i class="pi pi-arrow-right ml-2" />
+        </a>
+      </RouterLink>
+    </Button>
+  </nav>
 </template>
 
 <style scoped>
