@@ -27,14 +27,17 @@ const hideSommaire = ref(false)
 
 onBeforeRouteUpdate(async (to, from) => {
   if (to.params.id !== from.params.id) {
-    id.value = to.params.id
-    section.value = loiDeRoot.find((sec, idx) => {
-      if (sec.id == id.value) {
-        currIdx.value = idx
-        return true
-      }
-      return false
-    })
+    section.value = false
+    setTimeout(function () {
+      id.value = to.params.id
+      section.value = loiDeRoot.find((sec, idx) => {
+        if (sec.id == id.value) {
+          currIdx.value = idx
+          return true
+        }
+        return false
+      })
+    }, 1)
   }
   window.scrollTo(0, 0)
   hideSommaire.value = true
@@ -45,7 +48,9 @@ onBeforeRouteUpdate(async (to, from) => {
   <main class="relative" :style="`counter-set: section ${id}`">
     <LoiDeRootSommaire :hide="hideSommaire" @hide="hideSommaire = false" />
     <h1 class="mb-5">La Loi de Root</h1>
-    <LoiDeRootSectionContent v-if="section" :section="section" />
+    <Transition appear name="slide-fade" mode="out-in">
+      <LoiDeRootSectionContent v-if="section" :section="section" />
+    </Transition>
   </main>
   <LoiDeRootNavigation :prev="prev" :next="next" />
 </template>
