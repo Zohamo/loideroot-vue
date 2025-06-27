@@ -5,20 +5,16 @@ defineProps(['prev', 'next'])
 
 <template>
   <nav class="px-4 pb-8 flex gap-2">
-    <Button v-if="prev?.id" class="mr-auto">
-      <RouterLink v-slot="{ href, navigate }" :to="`/loi-de-root/${prev.id}`" custom>
-        <a v-ripple :href="href" @click="navigate">
-          <i class="pi pi-arrow-left mr-2" />
-          <span v-html="`${prev.id}. ${prev.title}`" />
-        </a>
+    <Button v-if="prev?.id" asChild v-slot="slotProps" class="mr-auto">
+      <RouterLink :class="`${slotProps.class} mr-auto`" :to="`/loi-de-root/${prev.id}`">
+        <i class="pi pi-arrow-left mr-2" />
+        <span v-html="`${prev.id}. ${prev.title}`" />
       </RouterLink>
     </Button>
-    <Button v-if="next?.id" class="ml-auto">
-      <RouterLink v-slot="{ href, navigate }" :to="`/loi-de-root/${next.id}`" custom>
-        <a v-ripple :href="href" @click="navigate">
-          <span v-html="`${next.id}. ${next.title}`" />
-          <i class="pi pi-arrow-right ml-2" />
-        </a>
+    <Button v-if="next?.id" asChild v-slot="slotProps" class="ml-auto">
+      <RouterLink :class="`${slotProps.class} ml-auto`" :to="`/loi-de-root/${next.id}`">
+        <span v-html="`${next.id}. ${next.title}`" />
+        <i class="pi pi-arrow-right ml-2" />
       </RouterLink>
     </Button>
   </nav>
