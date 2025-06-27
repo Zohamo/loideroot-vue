@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import TheNavigation from './components/TheNavigation.vue'
+import TheMenubar from './components/TheMenubar.vue'
 </script>
 
 <template>
-  <TheNavigation />
+  <TheMenubar />
   <RouterView />
 </template>
