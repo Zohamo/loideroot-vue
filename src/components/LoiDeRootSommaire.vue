@@ -27,21 +27,16 @@ items.value.unshift({ label: 'Lire la Loi', route: '/loi-de-root' })
 <template>
   <div class="fixed top-16 right-2">
     <Drawer v-model:visible="visible" @hide="emit('hide')" header="Sommaire" position="right">
-      <div class="flex justify-center">
-        <Menu :model="items">
-          <template #item="{ item, props }">
-            <router-link v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
-              <a v-ripple :href="href" v-bind="props.action" @click="navigate">
-                <span class="ml-2" v-html="item.label" />
-              </a>
-            </router-link>
-            <a v-else v-ripple :href="item.url" :target="item.target" v-bind="props.action">
-              <span class="ml-2" v-html="item.label" />
+      <Menu :model="items">
+        <template #item="{ item, props }">
+          <router-link v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
+            <a v-ripple :href="href" v-bind="props.action" @click="navigate">
+              <span class="font-root-title" v-html="item.label" />
             </a>
-          </template>
-        </Menu>
-      </div>
+          </router-link>
+        </template>
+      </Menu>
     </Drawer>
-    <Button class="" icon="pi pi-book" @click="visible = true" />
+    <Button icon="pi pi-book" @click="visible = true" />
   </div>
 </template>

@@ -34,6 +34,14 @@ const MyPreset = definePreset(Nora, {
         },
       },
     },
+    menu: {
+      colorScheme: {
+        light: {
+          background: 'none',
+          borderColor: 'none',
+        },
+      },
+    },
     menubar: {
       colorScheme: {
         light: {
