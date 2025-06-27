@@ -27,7 +27,7 @@ items.value.unshift({ label: 'Lire la Loi', route: '/loi-de-root' })
 <template>
   <div class="fixed top-16 right-2">
     <Drawer v-model:visible="visible" @hide="emit('hide')" header="Sommaire" position="right">
-      <div class="card flex justify-center">
+      <div class="flex justify-center">
         <Menu :model="items">
           <template #item="{ item, props }">
             <router-link v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
