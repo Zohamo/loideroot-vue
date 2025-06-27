@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import LoiDeRootSommaire from '../components/LoiDeRootSommaire.vue'
+import { ref } from 'vue'
+import loiDeRoot from '@/assets/json/loi-de-root.json'
+import LoiDeRootNavigation from '@/components/LoiDeRootNavigation.vue'
+import LoiDeRootSommaire from '@/components/LoiDeRootSommaire.vue'
+const next = ref(loiDeRoot.find((section) => section.id == '1'))
 </script>
 
 <template>
@@ -9,7 +13,7 @@ import LoiDeRootSommaire from '../components/LoiDeRootSommaire.vue'
       <img
         alt="Loi de Root logo"
         src="@/assets/img/loi-de-root.png"
-        style="max-width: 100%; margin: 0 auto"
+        style="max-width: 100%; max-height: 50vh; margin: 0 auto"
       />
     </header>
     <section>
@@ -80,4 +84,5 @@ import LoiDeRootSommaire from '../components/LoiDeRootSommaire.vue'
       </p>
     </section>
   </main>
+  <LoiDeRootNavigation :next="next" />
 </template>
