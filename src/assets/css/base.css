@@ -3,11 +3,10 @@
     background-color: #f8ecd8;
     background-image: url(../img/bg_paper.png);
     font-family: 'root-text', serif;
-    text-align: justify;
     line-height: 1.5;
   }
   main {
-    padding: 0 0.75rem;
+    padding: 0.75rem;
   }
   h1,
   h2,
@@ -58,6 +57,7 @@
   dl,
   ol,
   ul,
+  cite,
   table {
     margin-bottom: 1rem;
   }
@@ -77,5 +77,10 @@
   thead td {
     background-color: var(--color-black);
     color: var(--color-white);
+  }
+  main p,
+  main li,
+  main cite {
+    text-align: justify;
   }
 }
