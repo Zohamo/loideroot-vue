@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Règles d’or",
-    "text": "Ce chapitre répond à des questions techniques de manière détaillée. Vous n’êtes pas tenus de le lire lorsque vous apprenez à jouer pour la première fois.",
+    "content": "<p>Ce chapitre répond à des questions techniques de manière détaillée. Vous n’êtes pas tenus de le lire lorsque vous apprenez à jouer pour la première fois.</p>",
     "subsections": [
       {
         "id": "1.1",
@@ -109,12 +109,12 @@
   {
     "id": "2",
     "title": "Concepts clés",
-    "text": "Vous trouverez la définition des termes dans le Glossaire (<a href=\"#G\">Appendice G</a>).",
+    "content": "<p>Vous trouverez la définition des termes dans le Glossaire (<a href=\"#G\">Appendice G</a>).</p>",
     "subsections": [
       {
         "id": "2.1",
         "title": "Cartes",
-        "text": "Vous piochez des cartes dans la pioche commune et les défaussez dans la défausse commune. Si la pioche est vide, mélangez immédiatement la défausse pour former une nouvelle pioche. Chaque carte possède une <mark>couleur</mark>&nbsp;: oiseau, renard, lapin ou souris. La plupart des cartes ont également un effet qu’il est possible de fabriquer (<a href=\"#4.1\">4.1</a>). <a href=\"#10.2.1\"><i class=\"icon-faction text-cult\">L</i></a>",
+        "content": "<p>Vous piochez des cartes dans la pioche commune et les défaussez dans la défausse commune. Si la pioche est vide, mélangez immédiatement la défausse pour former une nouvelle pioche. Chaque carte possède une <mark>couleur</mark>&nbsp;: oiseau, renard, lapin ou souris. La plupart des cartes ont également un effet qu’il est possible de fabriquer (<a href=\"#4.1\">4.1</a>). <a href=\"#10.2.1\"><i class=\"icon-faction text-cult\">L</i></a></p>",
         "topics": [
           {
             "id": "2.1.1",
@@ -146,7 +146,7 @@
       {
         "id": "2.2",
         "title": "Clairières et Chemins",
-        "text": "Le plateau de la Forêt est composé de <mark>clairières</mark> reliées par des <mark>chemins</mark>.",
+        "content": "<p>Le plateau de la Forêt est composé de <mark>clairières</mark> reliées par des <mark>chemins</mark>.</p>",
         "topics": [
           {
             "id": "2.2.1",
@@ -173,12 +173,12 @@
       {
         "id": "2.3",
         "title": "Rivières",
-        "text": "Certaines clairières sont reliées par des <mark>rivières</mark>. <i>(Par défaut, les rivières ne sont pas des chemins, mais elles peuvent être considérées comme des chemins si instruction explicite. Les rivières ne divisent pas les clairières ou les bois.)</i> <a href=\"#11.2.2\"><i class=\"icon-faction text-riverfolk\">O</i></a>"
+        "content": "<p>Certaines clairières sont reliées par des <mark>rivières</mark>. <i>(Par défaut, les rivières ne sont pas des chemins, mais elles peuvent être considérées comme des chemins si instruction explicite. Les rivières ne divisent pas les clairières ou les bois.)</i> <a href=\"#11.2.2\"><i class=\"icon-faction text-riverfolk\">O</i></a></p>"
       },
       {
         "id": "2.4",
         "title": "Bois",
-        "text": "Les aires du plateau entourées par des chemins imprimés et des clairières sont appelées <mark>bois</mark>.",
+        "content": "<p>Les aires du plateau entourées par des chemins imprimés et des clairières sont appelées <mark>bois</mark>.</p>",
         "topics": [
           {
             "id": "2.4.1",
@@ -190,7 +190,7 @@
       {
         "id": "2.5",
         "title": "Contrôle",
-        "text": "Un joueur <mark>contrôle</mark> une clairière s’il y possède le plus grand nombre de guerriers et de bâtiments (supérieur à tous les autres joueurs). <i>(Les jetons et les pions ne sont pas pris en compte pour déterminer qui contrôle une clairière.)</i> En cas d’égalité dans une clairière, personne ne la contrôle. <a href=\"#7.2.2\"><i class=\"icon-faction text-eyrie\">E</i></a> <a href=\"#9.2.2\"><i class=\"icon-faction text-vagabond\">V</i></a> <a href=\"#10.2.4\"><i class=\"icon-faction text-cult\">L</i></a>"
+        "content": "<p>Un joueur <mark>contrôle</mark> une clairière s’il y possède le plus grand nombre de guerriers et de bâtiments (supérieur à tous les autres joueurs). <i>(Les jetons et les pions ne sont pas pris en compte pour déterminer qui contrôle une clairière.)</i> En cas d’égalité dans une clairière, personne ne la contrôle. <a href=\"#7.2.2\"><i class=\"icon-faction text-eyrie\">E</i></a> <a href=\"#9.2.2\"><i class=\"icon-faction text-vagabond\">V</i></a> <a href=\"#10.2.4\"><i class=\"icon-faction text-cult\">L</i></a></p>"
       }
     ]
   },
@@ -201,12 +201,12 @@
       {
         "id": "3.1",
         "title": "Conditions de Victoire",
-        "text": "Le premier joueur à atteindre 30 points de victoire remporte immédiatement la partie. Si plusieurs joueurs atteignent 30 points en même temps, le joueur dont c’est le tour remporte la partie."
+        "content": "<p>Le premier joueur à atteindre 30 points de victoire remporte immédiatement la partie. Si plusieurs joueurs atteignent 30 points en même temps, le joueur dont c’est le tour remporte la partie.</p>"
       },
       {
         "id": "3.2",
         "title": "Gagner des Points de Victoire",
-        "text": "Chaque faction a sa propre manière de gagner des points de victoire, mais toutes peuvent en gagner des manières suivantes&nbsp;:",
+        "content": "<p>Chaque faction a sa propre manière de gagner des points de victoire, mais toutes peuvent en gagner des manières suivantes&nbsp;:</p>",
         "topics": [
           {
             "id": "3.2.1",
@@ -223,7 +223,7 @@
       {
         "id": "3.3",
         "title": "Cartes Domination",
-        "text": "La pioche contient 4 cartes domination, qui vous permettent de remporter la partie sans marquer 30 points de victoire.",
+        "content": "<p>La pioche contient 4 cartes domination, qui vous permettent de remporter la partie sans marquer 30 points de victoire.</p>",
         "topics": [
           {
             "id": "3.3.1",
@@ -268,7 +268,7 @@
       {
         "id": "4.1",
         "title": "Fabrication",
-        "text": "Vous pouvez <mark>fabriquer</mark> la plupart des cartes de votre main pour gagner un effet immédiat ou persistant.",
+        "content": "<p>Vous pouvez <mark>fabriquer</mark> la plupart des cartes de votre main pour gagner un effet immédiat ou persistant.</p>",
         "topics": [
           {
             "id": "4.1.1",
@@ -295,7 +295,7 @@
       {
         "id": "4.2",
         "title": "Déplacement",
-        "text": "Pour vous <mark>déplacer</mark>, déplacez n'importe quel nombre <i>(supérieur à zéro)</i> de vos guerriers et pions d’une clairière vers une clairière adjacente.",
+        "content": "<p>Pour vous <mark>déplacer</mark>, déplacez n'importe quel nombre <i>(supérieur à zéro)</i> de vos guerriers et pions d’une clairière vers une clairière adjacente.</p>",
         "topics": [
           {
             "id": "4.2.1",
@@ -312,7 +312,7 @@
       {
         "id": "4.3",
         "title": "Combat",
-        "text": "Lorsque vous <mark>combattez</mark>, choisissez une clairière où vous possédez des guerriers ou des pions pour être la <mark>clairière du combat</mark>. Vous êtes l’<mark>attaquant</mark>. Choisissez un adversaire présent dans la clairière du combat pour être le <mark>défenseur</mark>.",
+        "content": "<p>Lorsque vous <mark>combattez</mark>, choisissez une clairière où vous possédez des guerriers ou des pions pour être la <mark>clairière du combat</mark>. Vous êtes l’<mark>attaquant</mark>. Choisissez un adversaire présent dans la clairière du combat pour être le <mark>défenseur</mark>.</p>",
         "topics": [
           {
             "id": "4.3.1",
@@ -372,7 +372,7 @@
   {
     "id": "5",
     "title": "Mise en place",
-    "text": "Si vous jouez avec de nouveaux joueurs, utilisez la Mise en place standard (<a href=\"#5.1\">5.1</a>). Si vous avez tous déjà joué et souhaitez apporter un peu de variété à cette partie, utilisez la Mise en place avancée (<a href=\"#A\">Appendice A</a>). Si vous souhaitez utiliser 5 factions ou plus qui doivent commencer dans une clairière d’un coin du plateau, vous devez utiliser les règles de Mise en place avancée.",
+    "content": "<p>Si vous jouez avec de nouveaux joueurs, utilisez la Mise en place standard (<a href=\"#5.1\">5.1</a>). Si vous avez tous déjà joué et souhaitez apporter un peu de variété à cette partie, utilisez la Mise en place avancée (<a href=\"#A\">Appendice A</a>). Si vous souhaitez utiliser 5 factions ou plus qui doivent commencer dans une clairière d’un coin du plateau, vous devez utiliser les règles de Mise en place avancée.</p>",
     "subsections": [
       {
         "id": "5.1",
@@ -418,8 +418,7 @@
       {
         "id": "5.2",
         "title": "Valeur",
-        "text": "Pour une partie intéressante choisissez des factions permettant d’atteindre une <mark>Valeur</mark> totale supérieure ou égale à celle indiquée pour votre nombre de joueurs. <i>(Les joueurs audacieux peuvent s’essayer à n’importe quelle combinaison de factions avec une Valeur supérieure ou égale à 17.)</i>",
-        "other": "<table class=\"table-bordered w-auto mx-auto\" aria-label=\"Valeur Totale Optimale\"><thead><tr class=\"table-dark\"><th colspan=\"6\" class=\"text-center\">Valeur Totale Optimale</th></tr></thead><tbody><tr><th>Joueurs</th><td class=\"text-center\">2</td><td class=\"text-center\">3</td><td class=\"text-center\">4</td><td class=\"text-center\">5</td><td class=\"text-center\">6</td></tr><tr><th>Valeur Totale</th><td class=\"text-center\">17+</td><td class=\"text-center\">18+</td><td class=\"text-center\">21+</td><td class=\"text-center\">25+</td><td class=\"text-center\">28+</td></tr></tbody></table><table class=\"table-bordered w-auto mx-auto\" aria-label=\"Valeur par Faction\"><thead><tr class=\"table-dark\"><th colspan=\"2\" class=\"text-center\">Valeur par Faction</th></tr></thead><tbody><tr><td>Marquise de Chat</td><td class=\"text-center\">10</td></tr><tr><td>Seigneur des Cents</td><td class=\"text-center\">9</td></tr><tr><td>Gardiens de Fer</td><td class=\"text-center\">8</td></tr><tr><td>Duché Souterrain</td><td class=\"text-center\">8</td></tr><tr><td>Dynasties de la Canopée</td><td class=\"text-center\">7</td></tr><tr><td>Vagabond (1er/2ème)</td><td class=\"text-center\">5/2</td></tr><tr><td>Compagnie de la Rivière</td><td class=\"text-center\">5</td></tr><tr><td>Alliance de la Forêt</td><td class=\"text-center\">3</td></tr><tr><td>Conspiration des Corvidés</td><td class=\"text-center\">3</td></tr><tr><td>Culte des Lézards</td><td class=\"text-center\">2</td></tr></tbody></table>"
+        "content": "<p>Pour une partie intéressante choisissez des factions permettant d’atteindre une <mark>Valeur</mark> totale supérieure ou égale à celle indiquée pour votre nombre de joueurs. <i>(Les joueurs audacieux peuvent s’essayer à n’importe quelle combinaison de factions avec une Valeur supérieure ou égale à 17.)</i></p>\n<table class=\"table-bordered w-auto mx-auto\" aria-label=\"Valeur Totale Optimale\"><thead><tr class=\"table-dark\"><th colspan=\"6\" class=\"text-center\">Valeur Totale Optimale</th></tr></thead><tbody><tr><th>Joueurs</th><td class=\"text-center\">2</td><td class=\"text-center\">3</td><td class=\"text-center\">4</td><td class=\"text-center\">5</td><td class=\"text-center\">6</td></tr><tr><th>Valeur Totale</th><td class=\"text-center\">17+</td><td class=\"text-center\">18+</td><td class=\"text-center\">21+</td><td class=\"text-center\">25+</td><td class=\"text-center\">28+</td></tr></tbody></table><table class=\"table-bordered w-auto mx-auto\" aria-label=\"Valeur par Faction\"><thead><tr class=\"table-dark\"><th colspan=\"2\" class=\"text-center\">Valeur par Faction</th></tr></thead><tbody><tr><td>Marquise de Chat</td><td class=\"text-center\">10</td></tr><tr><td>Seigneur des Cents</td><td class=\"text-center\">9</td></tr><tr><td>Gardiens de Fer</td><td class=\"text-center\">8</td></tr><tr><td>Duché Souterrain</td><td class=\"text-center\">8</td></tr><tr><td>Dynasties de la Canopée</td><td class=\"text-center\">7</td></tr><tr><td>Vagabond (1er/2ème)</td><td class=\"text-center\">5/2</td></tr><tr><td>Compagnie de la Rivière</td><td class=\"text-center\">5</td></tr><tr><td>Alliance de la Forêt</td><td class=\"text-center\">3</td></tr><tr><td>Conspiration des Corvidés</td><td class=\"text-center\">3</td></tr><tr><td>Culte des Lézards</td><td class=\"text-center\">2</td></tr></tbody></table>"
       }
     ]
   },
@@ -430,7 +429,7 @@
       {
         "id": "6.1",
         "title": "Aperçu",
-        "text": "La Marquise de Chat occupe les Sous-Bois et veut les transformer en puissance militaire et industrielle. Chaque fois que la Marquise construit un de ses <mark>bâtiments</mark> (Atelier, Scierie ou Recruteur), elle marque des points de victoire. Plus elle possède de bâtiments du même type sur le plateau, plus cela lui rapporte de points. Cependant pour pouvoir continuer à construire, la Marquise doit maintenir et protéger une production de <mark>bois</mark> forte et interconnectée."
+        "content": "<p>La Marquise de Chat occupe les Sous-Bois et veut les transformer en puissance militaire et industrielle. Chaque fois que la Marquise construit un de ses <mark>bâtiments</mark> (Atelier, Scierie ou Recruteur), elle marque des points de victoire. Plus elle possède de bâtiments du même type sur le plateau, plus cela lui rapporte de points. Cependant pour pouvoir continuer à construire, la Marquise doit maintenir et protéger une production de <mark>bois</mark> forte et interconnectée.</p>"
       },
       {
         "id": "6.2",
@@ -487,12 +486,12 @@
       {
         "id": "6.4",
         "title": "Aurore",
-        "text": "Placez du bois dans chaque clairière avec n'importe quel nombre de Scieries, à raison de 1 bois par Scierie dans la clairière."
+        "content": "<p>Placez du bois dans chaque clairière avec n'importe quel nombre de Scieries, à raison de 1 bois par Scierie dans la clairière.</p>"
       },
       {
         "id": "6.5",
         "title": "Jour",
-        "text": "D’abord, vous pouvez activer vos Ateliers pour fabriquer des cartes de votre main. Puis vous pouvez effectuer jusqu’à 3 actions dans n’importe quel ordre. Une même action peut être effectuée plusieurs fois. À tout moment, vous pouvez effectuer des actions additionnelles en dépensant une carte Oiseau par action.",
+        "content": "<p>D’abord, vous pouvez activer vos Ateliers pour fabriquer des cartes de votre main. Puis vous pouvez effectuer jusqu’à 3 actions dans n’importe quel ordre. Une même action peut être effectuée plusieurs fois. À tout moment, vous pouvez effectuer des actions additionnelles en dépensant une carte Oiseau par action.</p>",
         "topics": [
           { "id": "6.5.1", "title": "Combat.", "text": "Initiez un combat." },
           { "id": "6.5.2", "title": "Marche.", "text": "Effectuez jusqu'à 2 déplacements." },
@@ -533,7 +532,7 @@
       {
         "id": "6.6",
         "title": "Crépuscule",
-        "text": "Piochez 1 carte, plus 1 pour chaque bonus de pioche dévoilé. Puis, si vous avez plus de 5 cartes en main, défaussez-en (au choix) jusqu’à en avoir 5."
+        "content": "<p>Piochez 1 carte, plus 1 pour chaque bonus de pioche dévoilé. Puis, si vous avez plus de 5 cartes en main, défaussez-en (au choix) jusqu’à en avoir 5.</p>"
       }
     ]
   },
@@ -544,7 +543,7 @@
       {
         "id": "7.1",
         "title": "Aperçu",
-        "text": "Les Dynasties de la Canopée souhaitent redonner à leur espèce autrefois majestueuse sa gloire d’antan au sein des Sous-Bois en reprenant le contrôle de ses clairières. Durant le Crépuscule, la Canopée marque des points de victoire selon le nombre de <mark>Perchoirs</mark> placés sur le plateau. Plus il y en a, plus elle gagne de points. La Canopée est cependant liée par son <mark>Décret</mark>, un ensemble sans cesse croissant d’actions mandatées et promises par son <mark>dirigeant</mark>. Chaque tour, elle doit effectuer toutes les actions de son Décret, faute de quoi elle subit une <mark>crise</mark>."
+        "content": "<p>Les Dynasties de la Canopée souhaitent redonner à leur espèce autrefois majestueuse sa gloire d’antan au sein des Sous-Bois en reprenant le contrôle de ses clairières. Durant le Crépuscule, la Canopée marque des points de victoire selon le nombre de <mark>Perchoirs</mark> placés sur le plateau. Plus il y en a, plus elle gagne de points. La Canopée est cependant liée par son <mark>Décret</mark>, un ensemble sans cesse croissant d’actions mandatées et promises par son <mark>dirigeant</mark>. Chaque tour, elle doit effectuer toutes les actions de son Décret, faute de quoi elle subit une <mark>crise</mark>.</p>"
       },
       {
         "id": "7.2",
@@ -601,7 +600,7 @@
       {
         "id": "7.4",
         "title": "Aurore",
-        "text": "Votre Aurore comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Aurore comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "7.4.1",
@@ -623,7 +622,7 @@
       {
         "id": "7.5",
         "title": "Jour",
-        "text": "Votre Jour comporte 2 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Jour comporte 2 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "7.5.1",
@@ -662,7 +661,7 @@
       {
         "id": "7.6",
         "title": "Crépuscule",
-        "text": "Votre Crépuscule comporte 2 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Crépuscule comporte 2 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "7.6.1",
@@ -679,7 +678,7 @@
       {
         "id": "7.7",
         "title": "Crise",
-        "text": "Si vous ne pouvez pas réaliser une des actions du Décret (<a href=\"#7.5.2\">7.5.2</a>) quelle que soit la raison, vous subissez une crise. Vous devez résoudre toutes les actions de crise dans l’ordre suivant&nbsp;:",
+        "content": "<p>Si vous ne pouvez pas réaliser une des actions du Décret (<a href=\"#7.5.2\">7.5.2</a>) quelle que soit la raison, vous subissez une crise. Vous devez résoudre toutes les actions de crise dans l’ordre suivant&nbsp;:</p>",
         "topics": [
           {
             "id": "7.7.1",
@@ -713,7 +712,7 @@
       {
         "id": "7.8",
         "title": "Présentation des Dirigeants",
-        "text": "La Canopée possède 4 cartes de Dirigeant.",
+        "content": "<p>La Canopée possède 4 cartes de Dirigeant.</p>",
         "topics": [
           {
             "id": "7.8.1",
@@ -746,7 +745,7 @@
       {
         "id": "8.1",
         "title": "Aperçu",
-        "text": "L’Alliance de la Forêt fait son possible pour s’attirer la <mark>Sympathie</mark> des créatures opprimées des Sous-Bois. Chaque fois que l’Alliance place un jeton de Sympathie, elle peut marquer des points de victoire. Plus elle a placé de jetons de Sympathie, plus elle marque de points. Gagner la Sympathie des peuples nécessite des <mark>partisans</mark>, des cartes posées sur son plateau de faction. Ces partisans peuvent aussi être poussés à une violente révolte. Une révolte établit une <mark>base</mark>, permettant à l’Alliance d’entraîner des officiers qui offrent une plus grande flexibilité militaire."
+        "content": "<p>L’Alliance de la Forêt fait son possible pour s’attirer la <mark>Sympathie</mark> des créatures opprimées des Sous-Bois. Chaque fois que l’Alliance place un jeton de Sympathie, elle peut marquer des points de victoire. Plus elle a placé de jetons de Sympathie, plus elle marque de points. Gagner la Sympathie des peuples nécessite des <mark>partisans</mark>, des cartes posées sur son plateau de faction. Ces partisans peuvent aussi être poussés à une violente révolte. Une révolte établit une <mark>base</mark>, permettant à l’Alliance d’entraîner des officiers qui offrent une plus grande flexibilité militaire.</p>"
       },
       {
         "id": "8.2",
@@ -832,7 +831,7 @@
       {
         "id": "8.4",
         "title": "Aurore",
-        "text": "Votre Aurore comporte 2 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Aurore comporte 2 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "8.4.1",
@@ -890,7 +889,7 @@
       {
         "id": "8.5",
         "title": "Jour",
-        "text": "Vous pouvez effectuer les actions suivantes autant de fois que souhaité, dans n’importe quel ordre.",
+        "content": "<p>Vous pouvez effectuer les actions suivantes autant de fois que souhaité, dans n’importe quel ordre.</p>",
         "topics": [
           {
             "id": "8.5.1",
@@ -912,7 +911,7 @@
       {
         "id": "8.6",
         "title": "Crépuscule",
-        "text": "Votre Crépuscule comporte 2 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Crépuscule comporte 2 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "8.6.1",
@@ -949,7 +948,7 @@
       {
         "id": "9.1",
         "title": "Aperçu",
-        "text": "Le Vagabond participe au conflit sans prendre parti, tout en poursuivant ses propres quêtes afin d’accroître sa popularité dans les bois. Il marque des points de victoire lorsqu’il améliore ses <mark>relations</mark> avec les autres factions, ou lorsqu’il retire les pièces des factions qui lui sont hostiles. Il peut aussi accomplir des <mark>quêtes</mark> pour marquer des points. Pour se déplacer et agir efficacement, le Vagabond doit gérer ses objets, et agrandir sa collection en explorant les ruines et en apportant son aide aux autres factions."
+        "content": "<p>Le Vagabond participe au conflit sans prendre parti, tout en poursuivant ses propres quêtes afin d’accroître sa popularité dans les bois. Il marque des points de victoire lorsqu’il améliore ses <mark>relations</mark> avec les autres factions, ou lorsqu’il retire les pièces des factions qui lui sont hostiles. Il peut aussi accomplir des <mark>quêtes</mark> pour marquer des points. Pour se déplacer et agir efficacement, le Vagabond doit gérer ses objets, et agrandir sa collection en explorant les ruines et en apportant son aide aux autres factions.</p>"
       },
       {
         "id": "9.2",
@@ -1133,7 +1132,7 @@
       {
         "id": "9.4",
         "title": "Aurore",
-        "text": "Votre Aurore comporte 2 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Aurore comporte 2 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "9.4.1",
@@ -1150,7 +1149,7 @@
       {
         "id": "9.5",
         "title": "Jour",
-        "text": "Vous pouvez épuiser vos objets pour effectuer les actions suivantes autant de fois que souhaité, dans n’importe quel ordre. Si vous épuisez un <i class=\"icon-item\">X</i>, <i class=\"icon-item\">T</i>, ou <i class=\"icon-item\">B</i> sur une piste, déplacez-le dans votre Sacoche.",
+        "content": "<p>Vous pouvez épuiser vos objets pour effectuer les actions suivantes autant de fois que souhaité, dans n’importe quel ordre. Si vous épuisez un <i class=\"icon-item\">X</i>, <i class=\"icon-item\">T</i>, ou <i class=\"icon-item\">B</i> sur une piste, déplacez-le dans votre Sacoche.</p>",
         "topics": [
           {
             "id": "9.5.1",
@@ -1203,7 +1202,7 @@
       {
         "id": "9.6",
         "title": "Crépuscule",
-        "text": "Votre Crépuscule comporte 4 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Crépuscule comporte 4 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "9.6.1",
@@ -1230,7 +1229,7 @@
       {
         "id": "9.7",
         "title": "Jouer avec 2 Vagabonds",
-        "text": "L’extension de la Compagnie de la Rivière, intégrée au jeu de base, vous permet de jouer avec deux Vagabonds en suivant les règles suivantes.",
+        "content": "<p>L’extension de la Compagnie de la Rivière, intégrée au jeu de base, vous permet de jouer avec deux Vagabonds en suivant les règles suivantes.</p>",
         "topics": [
           {
             "id": "9.7.1",
@@ -1258,7 +1257,7 @@
       {
         "id": "10.1",
         "title": "Aperçu",
-        "text": "En s’occupant des créatures des Sous-Bois rejetées, le Culte des Lézards cherche à submerger ses ennemis par la seule force de sa volonté. Dans les clairières qu’il contrôle, le Culte peut construire des <mark>jardins</mark> et compter sur le bouche-à-oreille pour répandre son évangile. Plus le Culte affermit son emprise sur le cœur de ses disciples, plus il peut marquer de points de victoire en effectuant des <mark>rituels</mark>. Tandis que les autres factions dépensent des cartes pour atteindre leurs objectifs, le Culte agit en révélant des cartes et en choisissant progressivement la parfaite sélection de disciples. À moins de les utiliser pour marquer des points, ces cartes ne sont pas défaussées et retournent dans la main du Culte lors du Crépuscule. Mais cette approche plus douce rend les déplacements et les combats difficiles, et seuls les <mark>acolytes</mark> les plus radicaux du Culte, obtenus alors que ses guerriers se faisaient massacrer en défendant en combat, peuvent les entreprendre."
+        "content": "<p>En s’occupant des créatures des Sous-Bois rejetées, le Culte des Lézards cherche à submerger ses ennemis par la seule force de sa volonté. Dans les clairières qu’il contrôle, le Culte peut construire des <mark>jardins</mark> et compter sur le bouche-à-oreille pour répandre son évangile. Plus le Culte affermit son emprise sur le cœur de ses disciples, plus il peut marquer de points de victoire en effectuant des <mark>rituels</mark>. Tandis que les autres factions dépensent des cartes pour atteindre leurs objectifs, le Culte agit en révélant des cartes et en choisissant progressivement la parfaite sélection de disciples. À moins de les utiliser pour marquer des points, ces cartes ne sont pas défaussées et retournent dans la main du Culte lors du Crépuscule. Mais cette approche plus douce rend les déplacements et les combats difficiles, et seuls les <mark>acolytes</mark> les plus radicaux du Culte, obtenus alors que ses guerriers se faisaient massacrer en défendant en combat, peuvent les entreprendre.</p>"
       },
       {
         "id": "10.2",
@@ -1325,7 +1324,7 @@
       {
         "id": "10.4",
         "title": "Aurore",
-        "text": "Votre Aurore comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Aurore comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "10.4.1",
@@ -1364,7 +1363,7 @@
       {
         "id": "10.5",
         "title": "Jour",
-        "text": "Vous pouvez révéler autant de cartes de votre main que souhaité et effectuer un rituel par carte ainsi révélée, autant de fois que souhaité et dans n’importe quel ordre, comme indiqué ci-dessous. <i>(Prenez les cartes révélées dans votre main et placez-les dans votre aire de jeu. Elles ne peuvent pas être utilisées d’une autre manière durant votre Jour.)</i>",
+        "content": "<p>Vous pouvez révéler autant de cartes de votre main que souhaité et effectuer un rituel par carte ainsi révélée, autant de fois que souhaité et dans n’importe quel ordre, comme indiqué ci-dessous. <i>(Prenez les cartes révélées dans votre main et placez-les dans votre aire de jeu. Elles ne peuvent pas être utilisées d’une autre manière durant votre Jour.)</i></p>",
         "topics": [
           {
             "id": "10.5.1",
@@ -1391,7 +1390,7 @@
       {
         "id": "10.6",
         "title": "Crépuscule",
-        "text": "Votre Crépuscule comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Crépuscule comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "10.6.1",
@@ -1419,7 +1418,7 @@
       {
         "id": "11.1",
         "title": "Aperçu",
-        "text": "Lorsque la nouvelle se répandit que les Sous-Bois, sur les rives du grand lac, étaient en train de sombrer dans une guerre totale, la Compagnie de la Rivière envoya rapidement ses officiers s’y établir. Quand les autres factions loueront ses services, le peuple de la rivière sera rapidement en mesure de renforcer ses intérêts commerciaux en construisant des <mark>comptoirs</mark> le long de la rivière et de gagner des points de victoire. La Compagnie peut également marquer des points de victoire simplement en amassant des <mark>fonds</mark>. Mais une trésorerie ostensible est une cible tentante. Elle doit donc trouver l'équilibre entre la protection de son trésor et l’expansion de son réseau à travers toute la Forêt."
+        "content": "<p>Lorsque la nouvelle se répandit que les Sous-Bois, sur les rives du grand lac, étaient en train de sombrer dans une guerre totale, la Compagnie de la Rivière envoya rapidement ses officiers s’y établir. Quand les autres factions loueront ses services, le peuple de la rivière sera rapidement en mesure de renforcer ses intérêts commerciaux en construisant des <mark>comptoirs</mark> le long de la rivière et de gagner des points de victoire. La Compagnie peut également marquer des points de victoire simplement en amassant des <mark>fonds</mark>. Mais une trésorerie ostensible est une cible tentante. Elle doit donc trouver l'équilibre entre la protection de son trésor et l’expansion de son réseau à travers toute la Forêt.</p>"
       },
       {
         "id": "11.2",
@@ -1549,7 +1548,7 @@
       {
         "id": "11.4",
         "title": "Aurore",
-        "text": "Votre Aurore comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Aurore comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "11.4.1",
@@ -1571,7 +1570,7 @@
       {
         "id": "11.5",
         "title": "Jour",
-        "text": "Vous pouvez investir et dépenser des fonds pour faire les actions ci-dessous, autant de fois que souhaité et dans n’importe quel ordre. Pour investir 1 fonds, déplacez 1 guerrier vers la case Investissements. Pour dépenser 1 fonds, remettez le guerrier dans la réserve de son propriétaire.",
+        "content": "<p>Vous pouvez investir et dépenser des fonds pour faire les actions ci-dessous, autant de fois que souhaité et dans n’importe quel ordre. Pour investir 1 fonds, déplacez 1 guerrier vers la case Investissements. Pour dépenser 1 fonds, remettez le guerrier dans la réserve de son propriétaire.</p>",
         "topics": [
           {
             "id": "11.5.1",
@@ -1632,7 +1631,7 @@
       {
         "id": "11.6",
         "title": "Crépuscule",
-        "text": "Votre Crépuscule comporte 2 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Crépuscule comporte 2 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "11.6.1",
@@ -1655,7 +1654,7 @@
       {
         "id": "12.1",
         "title": "Aperçu",
-        "text": "Le Duché Souterrain souhaiterait asservir toutes les autres créatures des Sous-Bois. Les avant-postes qui gagnent du terrain le long de la frontière témoignent de son pouvoir dans les Sous-Bois et lui permettent de rallier des <mark>Ministres</mark> à sa cause et de mettre à profit ses ressources tout en marquant des points de victoire. Mais soyez prudent, la roue tourne vite et l’humiliation publique pourrait pousser les Ministres à abandonner leur poste."
+        "content": "<p>Le Duché Souterrain souhaiterait asservir toutes les autres créatures des Sous-Bois. Les avant-postes qui gagnent du terrain le long de la frontière témoignent de son pouvoir dans les Sous-Bois et lui permettent de rallier des <mark>Ministres</mark> à sa cause et de mettre à profit ses ressources tout en marquant des points de victoire. Mais soyez prudent, la roue tourne vite et l’humiliation publique pourrait pousser les Ministres à abandonner leur poste.</p>"
       },
       {
         "id": "12.2",
@@ -1722,12 +1721,12 @@
       {
         "id": "12.4",
         "title": "Aurore",
-        "text": "Placez, dans le Terrier, 1 guerrier, plus 1 guerrier par symbole guerrier visible."
+        "content": "<p>Placez, dans le Terrier, 1 guerrier, plus 1 guerrier par symbole guerrier visible.</p>"
       },
       {
         "id": "12.5",
         "title": "Jour",
-        "text": "Votre Jour comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Jour comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "12.5.1",
@@ -1824,7 +1823,7 @@
       {
         "id": "12.6",
         "title": "Crépuscule",
-        "text": "Votre Crépuscule comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Crépuscule comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "12.6.1",
@@ -1852,7 +1851,7 @@
       {
         "id": "13.1",
         "title": "Aperçu",
-        "text": "La Conspiration des Corvidés souhaite soumettre les Sous-Bois par la force en fomentant des <mark>Complots</mark> criminels, puis en marquant des points de victoire chaque fois qu’elle en retourne un. Plus elle fait éclater de Complots sur le plateau, plus elle marque de points. Il est crucial de détourner l’attention des autres joueurs, si ses plans sont trop faciles à anticiper, ils risquent d’être déjoués. Pour éviter que cela n’arrive, les Corvidés doivent recruter prudemment et sauter sur chaque occasion de duper ou extorquer leurs adversaires."
+        "content": "<p>La Conspiration des Corvidés souhaite soumettre les Sous-Bois par la force en fomentant des <mark>Complots</mark> criminels, puis en marquant des points de victoire chaque fois qu’elle en retourne un. Plus elle fait éclater de Complots sur le plateau, plus elle marque de points. Il est crucial de détourner l’attention des autres joueurs, si ses plans sont trop faciles à anticiper, ils risquent d’être déjoués. Pour éviter que cela n’arrive, les Corvidés doivent recruter prudemment et sauter sur chaque occasion de duper ou extorquer leurs adversaires.</p>"
       },
       {
         "id": "13.2",
@@ -1916,7 +1915,7 @@
       {
         "id": "13.4",
         "title": "Aurore",
-        "text": "Votre Aurore comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Aurore comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "13.4.1",
@@ -1938,7 +1937,7 @@
       {
         "id": "13.5",
         "title": "Jour",
-        "text": "Vous pouvez effectuer jusqu’à 3 actions, parmi celles indiquées ci-dessous, autant de fois que souhaité et dans n’importe quel ordre.",
+        "content": "<p>Vous pouvez effectuer jusqu’à 3 actions, parmi celles indiquées ci-dessous, autant de fois que souhaité et dans n’importe quel ordre.</p>",
         "topics": [
           { "id": "13.5.1", "title": "Déplacement.", "text": "Effectuez 1 déplacement." },
           {
@@ -1957,7 +1956,7 @@
       {
         "id": "13.6",
         "title": "Crépuscule",
-        "text": "Votre Crépuscule comporte 2 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Crépuscule comporte 2 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "13.6.1",
@@ -2006,7 +2005,7 @@
       {
         "id": "14.1",
         "title": "Aperçu",
-        "text": "Le Seigneur des Cents ne tolère ni les idiots ni les dissidents. Lors du Crépuscule, les Cents marquent des points proportionnellement à leur capacité à <mark>opprimer</mark> leurs ennemis. Plus ils contrôlent de clairières qui ne possèdent que des pièces des Cents, et aucune pièce adverse (pas de guerriers, pas de bâtiments, rien&nbsp;!), plus ils marquent de points. Pour gagner en puissance et attirer des guerriers, les Cents doivent gagner des objets et les ajouter à leur énorme <mark>Butin</mark>. Leur <mark>seigneur de guerre</mark> mène les Cents vers la victoire. Ce guerrier-démagogue à l’<mark>humeur</mark> capricieuse accorde une capacité à ses troupes à chaque tour. Mais plus les Cents gagnent d’objets et satisfont les rêves de richesse de leur seigneur de guerre, plus le choix d’humeur se restreint. Ceux qui se targuent de représenter la vraie voix des Sous-bois peuvent inciter des <mark>foules</mark> à détruire des bâtiments et jetons adverses et à piller des ruines en quête d’objets."
+        "content": "<p>Le Seigneur des Cents ne tolère ni les idiots ni les dissidents. Lors du Crépuscule, les Cents marquent des points proportionnellement à leur capacité à <mark>opprimer</mark> leurs ennemis. Plus ils contrôlent de clairières qui ne possèdent que des pièces des Cents, et aucune pièce adverse (pas de guerriers, pas de bâtiments, rien&nbsp;!), plus ils marquent de points. Pour gagner en puissance et attirer des guerriers, les Cents doivent gagner des objets et les ajouter à leur énorme <mark>Butin</mark>. Leur <mark>seigneur de guerre</mark> mène les Cents vers la victoire. Ce guerrier-démagogue à l’<mark>humeur</mark> capricieuse accorde une capacité à ses troupes à chaque tour. Mais plus les Cents gagnent d’objets et satisfont les rêves de richesse de leur seigneur de guerre, plus le choix d’humeur se restreint. Ceux qui se targuent de représenter la vraie voix des Sous-bois peuvent inciter des <mark>foules</mark> à détruire des bâtiments et jetons adverses et à piller des ruines en quête d’objets.</p>"
       },
       {
         "id": "14.2",
@@ -2075,7 +2074,7 @@
       {
         "id": "14.4",
         "title": "Aurore",
-        "text": "Votre Aurore comporte 4 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Aurore comporte 4 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "14.4.1",
@@ -2102,7 +2101,7 @@
       {
         "id": "14.5",
         "title": "Jour",
-        "text": "Votre Jour comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Jour comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "14.5.1",
@@ -2133,7 +2132,7 @@
       {
         "id": "14.6",
         "title": "Crépuscule",
-        "text": "Votre Crépuscule comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Crépuscule comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "14.6.1",
@@ -2155,7 +2154,7 @@
       {
         "id": "14.7",
         "title": "Humeurs",
-        "text": "Votre Crépuscule comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Crépuscule comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "14.7.1",
@@ -2208,7 +2207,7 @@
       {
         "id": "15.1",
         "title": "Aperçu",
-        "text": "Les Gardiens de Fer sont un ordre dévoué de chevaliers jadis exilés des Sous-Bois, désormais de retour pour retrouver les <mark>reliques</mark> perdues lors d’anciens conflits. Nul ne sait, cependant, si ces reliques appartiennent aux Gardiens ou aux Sous-Bois… Afin d’accomplir leur mission, ils doivent extraire les reliques des bois, les transporter vers un <mark>relais</mark> du même type, puis les restaurer. Lorsqu’ils restaurent une relique, ils marquent entre 1 et 3 points selon la valeur de la relique. Ils marquent également 2 points supplémentaires chaque fois qu’ils complètent un ensemble de 3 types de reliques <i>(statuette, tablette et bijou)</i>. Au fil du temps, un <mark>Cortège</mark> de créatures des Sous-Bois se joindra aux Gardiens, leur permettant d’effectuer davantage d’actions. Cependant, chaque fois qu’ils extraient ou restaurent une relique, ils risquent de perdre la carte Cortège qu’ils ont utilisée pour effectuer l’action. Il est donc primordial de planifier les actions en amont et de limiter les risques pour mener à bien la mission."
+        "content": "<p>Les Gardiens de Fer sont un ordre dévoué de chevaliers jadis exilés des Sous-Bois, désormais de retour pour retrouver les <mark>reliques</mark> perdues lors d’anciens conflits. Nul ne sait, cependant, si ces reliques appartiennent aux Gardiens ou aux Sous-Bois… Afin d’accomplir leur mission, ils doivent extraire les reliques des bois, les transporter vers un <mark>relais</mark> du même type, puis les restaurer. Lorsqu’ils restaurent une relique, ils marquent entre 1 et 3 points selon la valeur de la relique. Ils marquent également 2 points supplémentaires chaque fois qu’ils complètent un ensemble de 3 types de reliques <i>(statuette, tablette et bijou)</i>. Au fil du temps, un <mark>Cortège</mark> de créatures des Sous-Bois se joindra aux Gardiens, leur permettant d’effectuer davantage d’actions. Cependant, chaque fois qu’ils extraient ou restaurent une relique, ils risquent de perdre la carte Cortège qu’ils ont utilisée pour effectuer l’action. Il est donc primordial de planifier les actions en amont et de limiter les risques pour mener à bien la mission.</p>"
       },
       {
         "id": "15.2",
@@ -2275,7 +2274,7 @@
       {
         "id": "15.4",
         "title": "Aurore",
-        "text": "Votre Aurore comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Aurore comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "15.4.1",
@@ -2297,7 +2296,7 @@
       {
         "id": "15.5",
         "title": "Jour",
-        "text": "Votre Jour comporte 2 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Jour comporte 2 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "15.5.1",
@@ -2360,7 +2359,7 @@
       {
         "id": "15.6",
         "title": "Crépuscule",
-        "text": "Votre Crépuscule comporte 3 étapes à effectuer dans l’ordre suivant.",
+        "content": "<p>Votre Crépuscule comporte 3 étapes à effectuer dans l’ordre suivant.</p>",
         "topics": [
           {
             "id": "15.6.1",

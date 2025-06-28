@@ -5,12 +5,11 @@ defineProps(['section'])
 <template>
   <section>
     <h2 v-html="section.title" />
-    <p v-if="section.text" v-html="section.text" />
+    <div v-if="section.content" v-html="section.content" />
     <template v-if="section.subsections?.length">
       <div v-for="subsection in section.subsections" :key="subsection.id" class="subsection">
         <h3 v-html="subsection.title" />
-        <p v-if="subsection.text" v-html="subsection.text" />
-        <div v-if="subsection.other" v-html="subsection.other" />
+        <div v-if="subsection.content" v-html="subsection.content" />
         <ol v-if="subsection.topics?.length">
           <li v-for="topic in subsection.topics" :key="topic.id">
             <strong v-if="topic.title" v-html="topic.title" />
