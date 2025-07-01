@@ -39,7 +39,6 @@ onBeforeRouteUpdate(async (to, from) => {
       })
     }, 1)
   }
-  window.scrollTo(0, 0)
   hideSommaire.value = true
 })
 </script>

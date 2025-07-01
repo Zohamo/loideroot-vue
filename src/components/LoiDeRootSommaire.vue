@@ -10,6 +10,9 @@ const emit = defineEmits(['hide'])
 
 const visible = ref(false)
 
+// FIXME j'avais pensé à un truc plus simple mais j'ai oublié
+// en tout cas ça déconne quand on navigue avec prev/next puis le sommaire
+// le drawer ne se ferme plus
 watch(props, () => {
   if (props.hide) {
     visible.value = false

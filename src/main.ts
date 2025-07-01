@@ -27,6 +27,13 @@ const MyPreset = definePreset(Nora, {
     },
   },
   components: {
+    dialog: {
+      colorScheme: {
+        light: {
+          background: '{amber.50}',
+        },
+      },
+    },
     drawer: {
       colorScheme: {
         light: {
@@ -60,8 +67,7 @@ const MyPreset = definePreset(Nora, {
 
 const app = createApp(App)
 
-app.use(router)
-app.use(PrimeVue, {
+app.use(router).use(PrimeVue, {
   ripple: true,
   theme: {
     preset: MyPreset,
