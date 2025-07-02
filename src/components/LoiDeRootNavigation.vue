@@ -11,6 +11,12 @@ defineProps(['prev', 'next'])
         <span v-html="`${prev.id}. ${prev.title}`" />
       </RouterLink>
     </Button>
+    <Button v-else-if="next?.id == 2" asChild v-slot="slotProps" class="mr-auto">
+      <RouterLink :class="`${slotProps.class} mr-auto`" to="/loi-de-root">
+        <i class="pi pi-arrow-left mr-2" />
+        <span v-html="'Lire la Loi'" />
+      </RouterLink>
+    </Button>
     <Button v-if="next?.id" asChild v-slot="slotProps" class="ml-auto">
       <RouterLink :class="`${slotProps.class} ml-auto`" :to="`/loi-de-root/${next.id}`">
         <span v-html="`${next.id}. ${next.title}`" />
