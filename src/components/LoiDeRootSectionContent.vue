@@ -48,9 +48,12 @@ function replaceLinksByButtons(content: HTMLDivElement) {
         :id="subsection.id"
         class="subsection"
       >
-        <h3 v-html="subsection.title" />
+        <h3 v-if="subsection.title" v-html="subsection.title" />
         <div v-if="subsection.content" ref="subsections" v-html="subsection.content" />
-        <ol v-if="subsection.topics?.length">
+        <ol
+          v-if="subsection.topics?.length"
+          :style="!subsection.title ? { counterSet: 'subsection 1' } : {}"
+        >
           <li v-for="topic in subsection.topics" :key="topic.id" :id="topic.id">
             <strong v-if="topic.title" v-html="topic.title" />
             <span v-if="topic.text" ref="topics" v-html="' ' + topic.text" />
@@ -84,19 +87,19 @@ section {
 main h2::before {
   content: counter(section) '. ';
 }
-#appendices h2::before {
+main.appendice h2::before {
   content: counter(section, upper-alpha) '. ';
 }
 main h3::before {
   counter-increment: subsection;
   content: counter(section) '.' counter(subsection) ' ';
 }
-#appendices h3::before {
+main.appendice h3::before {
   counter-increment: subsection;
   content: counter(section, upper-alpha) '.' counter(subsection) ' ';
 }
 main .subsection > ol,
-#appendices .subsection > ol {
+main.appendice .subsection > ol {
   padding-left: 0;
   list-style-type: none;
 }
@@ -104,7 +107,7 @@ main .subsection > ol > li::before {
   counter-increment: topic;
   content: counter(section) '.' counter(subsection) '.' counter(topic) ' ';
 }
-#appendices .subsection > ol > li::before {
+main.appendice .subsection > ol > li::before {
   counter-increment: topic;
   content: counter(section, upper-alpha) '.' counter(subsection) '.' counter(topic) ' ';
 }

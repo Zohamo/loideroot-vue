@@ -6,7 +6,9 @@ import LoiDeRootNavigation from '@/components/LoiDeRootNavigation.vue'
 import LoiDeRootSectionContent from '@/components/LoiDeRootSectionContent.vue'
 import LoiDeRootSommaire from '@/components/LoiDeRootSommaire.vue'
 
+/** Current section's ID. */
 const id = ref(useRoute().params.id)
+/** Index of the current section object inside the JSON array. */
 const currIdx = ref(-1)
 const section = ref(
   loiDeRoot.find((sec, idx) => {
@@ -17,26 +19,40 @@ const section = ref(
     return false
   }),
 )
+/** If the current section is an appendice section. */
+const isAppendice = computed(() => section.value?.type === 'appendice')
+/** Numeric value of the counter to prefix the titles. */
+const counterSetValue = computed(() =>
+  isAppendice.value ? ['A', 'B', 'C', 'D', 'E', 'F', 'G'].indexOf(id.value) + 1 : id.value,
+)
+/** Previous section (for navigation). */
 const prev = computed(() =>
   currIdx.value > 0 && loiDeRoot[currIdx.value - 1] ? loiDeRoot[currIdx.value - 1] : {},
 )
+/** Next section (for navigation). */
 const next = computed(() =>
-  currIdx.value <= 15 && loiDeRoot[currIdx.value + 1] ? loiDeRoot[currIdx.value + 1] : {},
+  currIdx.value <= loiDeRoot.length && loiDeRoot[currIdx.value + 1]
+    ? loiDeRoot[currIdx.value + 1]
+    : {},
 )
+const showContent = ref(true)
 const hideSommaire = ref(false)
+const transitionName = ref('slide-fade')
 
 onBeforeRouteUpdate(async (to, from) => {
   if (to.params.id !== from.params.id) {
-    section.value = false
+    showContent.value = false
     setTimeout(function () {
       id.value = to.params.id
       section.value = loiDeRoot.find((sec, idx) => {
         if (sec.id == id.value) {
+          transitionName.value = idx < currIdx.value ? 'slide-fade-reverse' : 'slide-fade'
           currIdx.value = idx
           return true
         }
         return false
       })
+      showContent.value = true
     }, 1)
   }
   hideSommaire.value = true
@@ -44,11 +60,14 @@ onBeforeRouteUpdate(async (to, from) => {
 </script>
 
 <template>
-  <main class="relative" :style="`counter-set: section ${id}`">
+  <main :class="section?.type" :style="`counter-set: section ${counterSetValue}`">
     <LoiDeRootSommaire :hide="hideSommaire" @hide="hideSommaire = false" />
-    <h1 class="mb-5">La Loi de Root</h1>
-    <Transition appear name="slide-fade" mode="out-in">
-      <LoiDeRootSectionContent v-if="section" :section="section" />
+    <h1 class="mb-5">
+      La Loi de Root
+      <template v-if="isAppendice"><br /><small>Appendices</small></template>
+    </h1>
+    <Transition appear :name="transitionName" mode="out-in">
+      <LoiDeRootSectionContent v-if="showContent" :section="section" />
     </Transition>
   </main>
   <LoiDeRootNavigation :prev="prev" :next="next" />

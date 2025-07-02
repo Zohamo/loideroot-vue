@@ -72,11 +72,11 @@ const items = ref([
           ></i>
         </a>
       </template>
-      <template #end>
+      <!-- TODO <template #end>
         <div class="flex items-center gap-2">
           <i class="pi pi-search" />
         </div>
-      </template>
+      </template> -->
     </Menubar>
   </div>
 </template>

@@ -29,10 +29,12 @@ const router = createRouter({
     },
     {
       path: '/loi-de-root/:id/:slug?',
+      name: 'loi-de-root-section',
       component: () => import('../views/LoiDeRootSectionView.vue'),
     },
     {
       path: '/factions/:slug?',
+      name: 'faction',
       component: () => import('../views/FactionView.vue'),
     },
   ],

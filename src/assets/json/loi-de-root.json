@@ -424,6 +424,7 @@
   },
   {
     "id": "6",
+    "type": "faction",
     "title": "Marquise de Chat <i class=\"icon-faction text-marquise\">M</i>",
     "subsections": [
       {
@@ -538,6 +539,7 @@
   },
   {
     "id": "7",
+    "type": "faction",
     "title": "Dynasties de la Canopée <i class=\"icon-faction text-eyrie\">E</i>",
     "subsections": [
       {
@@ -740,6 +742,7 @@
   },
   {
     "id": "8",
+    "type": "faction",
     "title": "Alliance de la Forêt <i class=\"icon-faction text-woodland\">A</i>",
     "subsections": [
       {
@@ -943,6 +946,7 @@
   },
   {
     "id": "9",
+    "type": "faction",
     "title": "Vagabond <i class=\"icon-faction text-vagabond\">V</i>",
     "subsections": [
       {
@@ -1252,6 +1256,7 @@
   },
   {
     "id": "10",
+    "type": "faction",
     "title": "Culte des Lézards <i class=\"icon-faction text-cult\">L</i>",
     "subsections": [
       {
@@ -1413,6 +1418,7 @@
   },
   {
     "id": "11",
+    "type": "faction",
     "title": "Compagnie de la Rivière <i class=\"icon-faction text-riverfolk\">O</i>",
     "subsections": [
       {
@@ -1649,6 +1655,7 @@
   },
   {
     "id": "12",
+    "type": "faction",
     "title": "Duché Souterrain <i class=\"icon-faction text-duchy\">D</i>",
     "subsections": [
       {
@@ -1846,6 +1853,7 @@
   },
   {
     "id": "13",
+    "type": "faction",
     "title": "Conspiration des Corvidés <i class=\"icon-faction text-corvid\">C</i>",
     "subsections": [
       {
@@ -2000,6 +2008,7 @@
   },
   {
     "id": "14",
+    "type": "faction",
     "title": "Seigneur des Cents <i class=\"icon-faction text-warlord\">H</i>",
     "subsections": [
       {
@@ -2202,6 +2211,7 @@
   },
   {
     "id": "15",
+    "type": "faction",
     "title": "Gardiens de Fer <i class=\"icon-faction text-keepers\">K</i>",
     "subsections": [
       {
@@ -2375,6 +2385,860 @@
             "id": "15.6.3",
             "title": "Piocher et défausser.",
             "text": "Piochez 1 carte, plus 1 pour chaque bonus de pioche dévoilé <i>(égal au nombre de Relais sur le plateau)</i>. Puis, si vous avez plus de 5 cartes en main, défaussez-en (au choix) jusqu’à en avoir 5."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "A",
+    "type": "appendice",
+    "title": "Mise en place avancée",
+    "content": "<p>Il y a des centaines de façons de jouer à <i>Root</i>. Les icônes visibles à côté de chaque étape de mise en place indiquent les extensions de Root (<a href=\"#B\">Appendice B</a>) qui proposent des options pour personnaliser cette étape.</p>",
+    "subsections": [
+      {
+        "id": "A.1",
+        "title": "Étape 1&nbsp;: Choisir et installer un plateau <i class=\"icon-shield\">L</i>",
+        "content": "<p>Choisissez tous ensemble le plateau de jeu que vous souhaitez utiliser. Si vous choisissez un autre plateau que le plateau Automne (<a href=\"#C\">Appendice C</a>), suivez la section Modifications de Mise en Place du plateau correspondant. Prenez ensuite les 12 marqueurs de couleur, mélangez-les face cachée, puis placez-les un par un sur chaque clairière, en recouvrant les symboles de couleur imprimés s'il y en a. Installez les ruines (<a href=\"#5.1.4\">5.1.4</a>), la réserve d’objets (<a href=\"#5.1.5\">5.1.5</a>) et les dés (<a href=\"#5.1.6\">5.1.6</a>) normalement.</p>"
+      },
+      {
+        "id": "A.2",
+        "title": "Étape 2&nbsp;: Choisir les cartes <i class=\"icon-shield\">P</i>",
+        "content": "<p>Vous pouvez choisir ensemble de remplacer le paquet de cartes de base par le paquet de cartes Éxilés et Partisans.</p>"
+      },
+      {
+        "id": "A.3",
+        "title": "Étape 3&nbsp;: Choisir des robots <i class=\"icon-shield\">C</i>",
+        "content": "<p>Vous pouvez choisir ensemble de jouer avec des robots, comme indiqué dans la Loi de Rootbotiques.</p>"
+      },
+      {
+        "id": "A.4",
+        "title": "Étape 4&nbsp;: Placer les joueurs",
+        "content": "<p>Déterminez au hasard la place des joueurs autour de la table ainsi que le premier joueur.</p>"
+      },
+      {
+        "id": "A.5",
+        "title": "Étape 5&nbsp;: Installer des Monuments <i class=\"icon-shield\">Q</i>",
+        "content": "<p>Vous pouvez choisir ensemble d’utiliser des Monuments (<a href=\"#F\">Appendice F</a>). Vous pouvez alors ignorer les étapes de mise en place de la Tour et du Radeau décrites dans la section Variantes de plateaux (<a href=\"#C\">Appendice C</a>).</p>",
+        "topics": [
+          {
+            "id": "A.5.1",
+            "title": "Étape 1&nbsp;: Choisir.",
+            "text": "Choisissez ensemble si vous souhaitez jouer avec 1 ou 2 Monuments, puis retirez les cartes Monument avec lesquelles vous ne souhaitez pas jouer."
+          },
+          {
+            "id": "A.5.2",
+            "title": "Étape 2&nbsp;: Distribuer les cartes et prendre les Monuments.",
+            "text": "Mélangez les cartes Monument choisies, distribuez-en autant que décidé précédemment, puis prenez la pièce du Monument illustré sur chaque carte distribuée."
+          },
+          {
+            "id": "A.5.3",
+            "title": "Étape 3&nbsp;: Mise en place.",
+            "text": "Le dernier joueur dans l’ordre du tour installe un des Monuments piochés, comme indiqué sur sa carte. Si vous avez choisi de jouer avec 2 Monuments, l’avant-dernier joueur dans l’ordre du tour installe l’autre Monument pioché, comme indiqué sur sa carte."
+          }
+        ]
+      },
+      {
+        "id": "A.6",
+        "title": "Étape 6&nbsp;: Installer les Nomades <i class=\"icon-shield\">Z</i> <i class=\"icon-shield\">K</i>",
+        "content": "<p>Vous pouvez choisir ensemble d’utiliser exactement 3 Nomades (<a href=\"#E\">Appendice E</a>), en suivant ces étapes&nbsp;:</p>",
+        "topics": [
+          {
+            "id": "A.6.1",
+            "title": "Étape 1&nbsp;: Prendre les pièces.",
+            "text": "Mélangez toutes les cartes Nomade. Distribuez 3 cartes Nomade et rangez le reste des cartes dans la boîte. Prenez les pièces des Nomades distribués et formez des réserves avec celles-ci."
+          },
+          {
+            "id": "A.6.2",
+            "title": "Étape 2&nbsp;: Rétrograder.",
+            "text": "Si vous jouez à 3 joueurs, retournez au hasard 1 des Nomades sur sa face Rétrogradé <i>(indiqué par un «&nbsp;R&nbsp;»)</i>. Si vous jouez à 4 joueurs, retournez au hasard 2 des Nomades sur leur face Rétrogradé. Si vous jouez à 5 joueurs ou plus, retournez les 3 Nomades sur leur face Rétrogradé."
+          },
+          {
+            "id": "A.6.3",
+            "title": "Étape 3&nbsp;: Installer les Nomades.",
+            "text": "En commençant par le joueur qui jouera en dernier, et en continuant dans le sens antihoraire, les joueurs installent un Nomade chacun, comme indiqué sur sa carte. <i>(Certains Nomades n’ont pas d’indications de mise en place.)</i>"
+          },
+          {
+            "id": "A.6.4",
+            "title": "Étape 4&nbsp;: Placez les marqueurs de Nomade.",
+            "text": "Placez les trois marqueurs de Nomade («&nbsp;4,&nbsp;», «&nbsp;8&nbsp;» et «&nbsp;12&nbsp;») sur les cases correspondantes de la piste de score du plateau."
+          },
+          {
+            "id": "A.6.5",
+            "title": "Étape 5&nbsp;: Ranger les factions correspondantes.",
+            "text": "Une faction dont le Nomade correspondant <i>(couleur et icône identiques)</i> est en jeu ne peut pas être utilisée. Rangez les plateaux de factions correspondants ainsi que les pièces et cartes de mise en place associées dans la boîte."
+          }
+        ]
+      },
+      {
+        "id": "A.7",
+        "title": "Étape 7&nbsp;: Piocher 5 cartes.",
+        "content": "<p>Si vous jouez à 2 joueurs, retirez du paquet les 4 cartes Domination, puis mélangez le paquet. Mélangez la pioche. Chaque joueur pioche 5 cartes. <i>(Pas 3, comme lors de la Mise en Place Standard&nbsp;! Vous choisirez les 3 cartes que vous souhaitez conserver lors de l’étape 10.)</i></p>"
+      },
+      {
+        "id": "A.8",
+        "title": "Étape 8&nbsp;: Installer les factions <i class=\"icon-shield\">Z</i>",
+        "content": "<p>Vous pouvez choisir ensemble d’installer les factions comme indiqué dans la Mise en place standard (<a href=\"#5.1\">5.1</a>) ou d’utiliser les cartes de Mise en place incluses dans l’extension Maraude, comme indiqué ci-dessous.</p>",
+        "topics": [
+          {
+            "id": "A.8.1",
+            "title": "Étape 1&nbsp;: Distribuer les cartes de mise en place.",
+            "text": "Mélangez toutes les cartes de mise en place de faction Militante <i>(nom rouge avec une épée)</i> et piochez-en 1 à placer au centre de la table. Mélangez le reste des cartes de mise en place de faction Militante avec toutes les cartes de mise en place de faction Insurgée <i>(nom gris sans épée)</i>, et piochez 1 carte de mise en place par joueur. Placez ces cartes une à une à côté de celle déjà placée au centre de la table. <i>(Il doit y avoir une carte de mise en place de faction de plus que le nombre de joueurs.)</i>",
+            "items": [
+              {
+                "id": "A.8.1.I",
+                "title": "Deux joueurs.",
+                "text": "Si vous n’êtes que 2 joueurs, retirez toutes les cartes de mise en place de faction Insurgée avant d’en piocher. <i>(Vous pouvez les garder si vous jouez avec les Nomades ou que vous pensez pouvoir relever le défi.)</i>"
+              },
+              {
+                "id": "A.8.1.II",
+                "title": "Bloquer le dernier insurgé.",
+                "text": "Si la dernière carte de mise en place de faction piochée est une faction Insurgée, placez-la à l’horizontale pour indiquer qu’elle est bloquée. Elle ne peut être choisie que si au moins une faction Militante à été choisie."
+              },
+              {
+                "id": "A.8.1.III",
+                "title": "Vagabond.",
+                "text": "Chaque fois que vous piochez et placez une carte de mise en place de faction Vagabond, piochez également une carte Personnage et placez-la face visible à côté de la première. Si un joueur choisit ce Vagabond comme faction, il doit utiliser la carte Personnage associée."
+              }
+            ]
+          },
+          {
+            "id": "A.8.2",
+            "title": "Étape 2&nbsp;: Choisir les factions.",
+            "text": "En commençant par le dernier joueur dans l’ordre du tour et en continuant dans le sens antihoraire, chaque joueur choisit une carte de mise en place de faction parmi celles au centre de la table et installe immédiatement <i>(avant que le joueur suivant ne choisisse sa carte)</i> sa faction comme indiqué sur la carte de mise en place.",
+            "items": [
+              {
+                "id": "A.8.2.I",
+                "title": "Patrie.",
+                "text": "Lors de la Mise en place, les joueurs peuvent avoir à choisir une ou plusieurs clairières comme Patrie. Ils ne peuvent pas choisir une Patrie déjà choisie comme telle par un adversaire, ni choisir une Patrie dans laquelle ils ne peuvent pas placer toutes les pièces indiquées dans les étapes de Mise en place."
+              },
+              {
+                "id": "A.8.2.II",
+                "title": "Patries adjacentes.",
+                "text": "Certaines factions vous indiquent de choisir une Patrie qui n’est pas adjacente à une Patrie adverse, ou qui se trouve à plus de 2 clairières de distance des Patries adverses. Si vous ne pouvez pas choisir une Patrie à «&nbsp;plus de 2 clairières de distance des Patries adverses&nbsp;», choisissez une Patrie qui n’est pas adjacente à une Patrie adverse. Si vous ne pouvez pas choisir une Patrie «&nbsp;qui n’est pas adjacente à une Patrie adverse&nbsp;», vous pouvez choisir une Patrie adjacente à une Patrie adverse. <i>(De manière plus générale, essayez de vous installer «&nbsp;le plus loin possible des autres&nbsp;».)</i>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A.9",
+        "title": "Étape 9&nbsp;: Marqueurs de score",
+        "content": "<p>Chaque joueur place son marqueur de score sur la case \"0\" de la piste de score.</p>"
+      },
+      {
+        "id": "A.10",
+        "title": "Étape 10&nbsp;: Mains de départ",
+        "content": "<p>Chaque joueur choisit 3 cartes à conserver parmi celles qu’il a en main, et replace les 2 autres, face cachée, sur la pioche. Lorsque tous les joueurs ont choisi leurs cartes, mélangez la pioche.</p>"
+      }
+    ]
+  },
+  {
+    "id": "B",
+    "type": "appendice",
+    "title": "Matériel",
+    "subsections": [
+      {
+        "id": "B.1",
+        "title": "Root",
+        "topics": [
+          {
+            "id": "B.1.1",
+            "title": "Livrets de règles.",
+            "text": "Fiche de guide, livret d’apprentissage et la Loi de Root."
+          },
+          {
+            "id": "B.1.2",
+            "title": "Pièces en carton.",
+            "text": "28 bâtiments <i>(7 Perchoirs, 6 Scieries, 6 Recruteurs, 6 Ateliers, 3 Bases)</i>, 19 jetons <i>(10 Sympathie, 8 Bois, 1 Donjon)</i>, 12 marqueurs de clairière <i>(4 Lapin, 4 Renard, 4 Souris)</i>, 4 Ruines, 4 marqueurs de score, 3 marqueurs de relation, 23 Objets <i>(4 Bottes, 4 Épées, 4 Sacs, 3 Marteaux, 3 Cafés, 2 Pièces, 2 Arbalètes, 1 Torche)</i>."
+          },
+          {
+            "id": "B.1.3",
+            "title": "Pièces en bois.",
+            "text": "55 guerriers <i>(25 Marquise, 20 Canopée, 10 Alliance)</i>, 1 pion Vagabond."
+          },
+          {
+            "id": "B.1.4",
+            "title": "Cartes.",
+            "text": "54 Cartes pour le paquet commun, 16 aperçus de faction, 4 Dirigeants de la Canopée, 2 Vizirs fidèles, 3 Personnages Vagabond, 15 Quêtes, 4 Guides."
+          },
+          {
+            "id": "B.1.5",
+            "title": "Autres.",
+            "text": "Plateau <i>(plateaux Automne et Hiver)</i>, 2 dés, 4 plateaux de faction <i>(Marquise, Canopée, Alliance, Vagabond)</i>."
+          }
+        ]
+      },
+      {
+        "id": "B.2",
+        "title": "Extension Compagnie de la Rivière (incluse dans la boîte de base) <i class=\"icon-shield\">X</i>",
+        "topics": [
+          { "id": "B.2.1", "title": "Livrets de règles.", "text": "Livret d’apprentissage." },
+          {
+            "id": "B.2.2",
+            "title": "Pièces en carton.",
+            "text": "15 bâtiments <i>(15 Jardins)</i>, 9 jetons <i>(9 Comptoirs Commerciaux)</i>, 3 marqueurs de score, 1 marqueur de parias, 9 marqueurs de relation, 11 Objets <i>(3 Bottes, 3 Épées, 1 Sac, 1 Marteau, 1 Torche, 1 Pièce, 1 Arbalète)</i> et 17 pièces supplémentaires avec une lettre au dos pour de futurs scénarios."
+          },
+          {
+            "id": "B.2.3",
+            "title": "Pièces en bois.",
+            "text": "40 guerriers <i>(25 Lézards, 15 Compagnie de la Rivière)</i>, 1 pion Vagabond."
+          },
+          {
+            "id": "B.2.4",
+            "title": "Cartes.",
+            "text": "4 Espions, 2 aperçus de faction, 3 Personnages Vagabond."
+          },
+          {
+            "id": "B.2.5",
+            "title": "Autres.",
+            "text": "4 plateaux de faction <i>(Deuxième Vagabond, Marquise Mécanique, Compagnie de la Rivière, Culte des Lézards)</i>, 3 marqueurs de services, 1 porte-cartes."
+          }
+        ]
+      },
+      {
+        "id": "B.3",
+        "title": "Extension Monde Souterrain <i class=\"icon-shield\">L</i>",
+        "topics": [
+          {
+            "id": "B.3.1",
+            "title": "Livrets de règles.",
+            "text": "Livret d’apprentissage et la Loi de Root."
+          },
+          {
+            "id": "B.3.2",
+            "title": "Pièces en carton.",
+            "text": "6 bâtiments <i>(3 Marchés, 3 Citadelles)</i>, 19 Jetons <i>(8 Complots, 8 Complots supplémentaires, 3 Tunnels)</i>, le Terrier, 4 marqueurs de relations, 2 marqueurs de score, 6 marqueurs de chemin fermé."
+          },
+          {
+            "id": "B.3.3",
+            "title": "Pièces en bois.",
+            "text": "35 guerriers <i>(20 Duché, 15 Corvidés)</i> 1 Radeau, 1 Tour, 9 Couronnes."
+          },
+          { "id": "B.3.4", "title": "Cartes.", "text": "9 Ministres, 2 aperçus de faction." },
+          {
+            "id": "B.3.5",
+            "title": "Autres.",
+            "text": "Plateau <i>(plateaux Lac et Montagne)</i>, 2 dés, 2 plateaux de faction <i>(Duché, Corvidés)</i>."
+          }
+        ]
+      },
+      {
+        "id": "B.4",
+        "title": "Extension Maraude <i class=\"icon-shield\">Z</i>",
+        "topics": [
+          {
+            "id": "B.4.1",
+            "title": "Livrets de règles.",
+            "text": "Livret d’apprentissage et la Loi de Root."
+          },
+          {
+            "id": "B.4.2",
+            "title": "Pièces en carton.",
+            "text": "9 Bâtiments <i>(3 Relais, 6 Bastions)</i>, 17 jetons <i>(12 Reliques, 5 Foules)</i>, 4 marqueurs de relations, 2 marqueurs de score, 12 marqueurs de supervision, 3 objets Gourdin, 3 marqueurs de Nomade, 11 marqueurs supplémentaires <i>(9 Scores, 2 Relations)</i>."
+          },
+          {
+            "id": "B.4.3",
+            "title": "Pièces en bois.",
+            "text": "56 guerriers <i>(20 Cents, 15 Gardiens, 12 Gardes Forestiers, 5 Dynastie, 4 Révolte)</i>, 1 Seigneur de guerre des Cents, 1 pion Éxilé."
+          },
+          {
+            "id": "B.4.4",
+            "title": "Cartes.",
+            "text": "8 Humeurs, 3 Membres Loyaux du Cortège, 11 Mise en place de faction, 4 Nomades, 2 Aperçu."
+          },
+          {
+            "id": "B.4.5",
+            "title": "Autres.",
+            "text": "2 plateaux de faction <i>(Cents, Gardiens)</i>, 3 dés <i>(Foule, Révolte, Supervision)</i>."
+          }
+        ]
+      },
+      {
+        "id": "B.5",
+        "title": "Extension Mécanique (incluse dans la boîte Monde Souterrain) <i class=\"icon-shield\">C</i>",
+        "topics": [
+          { "id": "B.5.1", "title": "Livrets de règles.", "text": "Les Lois de la Rootbotique." },
+          { "id": "B.5.2", "title": "Pièces en carton.", "text": "12 marqueurs de priorité." },
+          {
+            "id": "B.5.3",
+            "title": "Cartes.",
+            "text": "12 Difficultés, 16 Traits de caractère, 3 Vagabots."
+          },
+          { "id": "B.5.4", "title": "Autres.", "text": "4 plateaux de faction." }
+        ]
+      },
+      {
+        "id": "B.6",
+        "title": "Extension Mécanique 2 (incluse dans la boîte Mauraude) <i class=\"icon-shield\">C</i>",
+        "topics": [
+          { "id": "B.6.1", "title": "Livrets de règles.", "text": "Les Lois de la Rootbotique." },
+          { "id": "B.6.2", "title": "Pièces en carton.", "text": "12 marqueurs de priorité." },
+          {
+            "id": "B.6.3",
+            "title": "Cartes.",
+            "text": "12 Difficultés, 20 Traits de Caractère, 3 Vagabots, 1 Intéraction, 11 Services."
+          },
+          { "id": "B.6.4", "title": "Autres.", "text": "4 plateaux de faction." }
+        ]
+      },
+      {
+        "id": "B.7",
+        "title": "Paquet de cartes Exilés et Partisans (inclus dans la boîte Monde Souterrain) <i class=\"icon-shield\">P</i>",
+        "topics": [
+          { "id": "B.7.1", "title": "Cartes.", "text": "54 cartes pour le paquet commun." }
+        ]
+      },
+      {
+        "id": "B.8",
+        "title": "Pack Monuments (inclus dans la boîte Mauraude) <i class=\"icon-shield\">Q</i>",
+        "topics": [
+          { "id": "B.8.1", "title": "Cartes.", "text": "1 mise en place/règles, 6 Monuments." },
+          { "id": "B.8.2", "title": "Pièces en bois.", "text": "4 Monuments." }
+        ]
+      },
+      {
+        "id": "B.9",
+        "title": "Pack Vagabond (inclu dans la boîte Monde Souterrain) <i class=\"icon-shield\">B</i>",
+        "topics": [
+          {
+            "id": "B.9.1",
+            "title": "Pièces en carton.",
+            "text": "3 objets <i>(1 Pièce, 1 Marteau, 1 Botte)</i>."
+          },
+          { "id": "B.9.2", "title": "Pièces en bois.", "text": "7 pions Vagabond." },
+          { "id": "B.9.3", "title": "Cartes.", "text": "3 Personnages Vagabond." }
+        ]
+      },
+      {
+        "id": "B.10",
+        "title": "Packs Nomades (non incluse dans la boîte Mauraude) <i class=\"icon-shield\">K</i>",
+        "topics": [
+          {
+            "id": "B.10.1",
+            "title": "Livrets de règles.",
+            "text": "Livret d’apprentissage Nomades."
+          },
+          {
+            "id": "B.10.2",
+            "title": "Pièces en carton.",
+            "text": "3 marqueurs de Nomade, 12 marqueurs de supervision. 3 jetons Caverne dans le pack Souterrain. 6 bâtiments Coffre dans le pack Maraude."
+          },
+          {
+            "id": "B.10.3",
+            "title": "Pièces en bois.",
+            "text": "1 pion Flottille, 4 guerriers Prophètes, 4 guerriers Bandits dans le pack de la Rivière. 8 guerriers Expédition, 6 guerriers Espions et 1 pion Protecteur dans le pack Souterrain. 6 guerriers Porteurs, 6 guerriers Gardiens et 5 guerriers Groupe dans le pack Maraude."
+          },
+          { "id": "B.10.4", "title": "Cartes.", "text": "3 Nomades." },
+          { "id": "B.10.5", "title": "Autres.", "text": "1 dé de supervision." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "C",
+    "type": "appendice",
+    "title": "Variantes de Plateaux",
+    "subsections": [
+      {
+        "id": "C.1",
+        "title": "Plateau Hiver.",
+        "topics": [
+          {
+            "id": "C.1.1",
+            "title": "Rivière déchainée.",
+            "text": "La rivière divise les bois (comme les chemins imprimés)."
+          }
+        ]
+      },
+      {
+        "id": "C.2",
+        "title": "Plateau Lac <i class=\"icon-shield\">L</i>",
+        "topics": [
+          {
+            "id": "C.2.1",
+            "title": "Modifications de mise en place.",
+            "text": "Placez le Radeau dans la clairière côtière du coin inférieur droit."
+          },
+          {
+            "id": "C.2.2",
+            "title": "Le Lac.",
+            "text": "Le <mark>lac</mark> est au centre du plateau. Considérez le lac comme des rivières reliant chaque clairière côtière aux autres clairières côtières. Le lac divise les bois."
+          },
+          {
+            "id": "C.2.3",
+            "title": "Clairières Côtières.",
+            "text": "Les clairières qui touchent le lac <i>(pas entourées de bois)</i> sont des <mark>clairières côtières</mark>."
+          },
+          {
+            "id": "C.2.4",
+            "title": "Bois Côtiers.",
+            "text": "Les bois qui touchent le lac sont des <mark>bois côtiers</mark>. Chaque bois côtier est adjacent aux deux bois côtiers de chaque coté <i>(séparés par une clairière côtière)</i>."
+          },
+          {
+            "id": "C.2.5",
+            "title": "Le Radeau.",
+            "text": "Une fois par tour, les pièces qui se déplacent depuis la clairière côtière comportant le Radeau peuvent se déplacer avec le Radeau vers une autre clairière côtière <i>(qui est donc considérée comme adjacente)</i>. Puis, le joueur qui a fait le déplacement pioche 1 carte. <i>(Et ce selon les règles de déplacement habituelles.)</i> Le Radeau ne peut être ni combattu ni retiré."
+          }
+        ]
+      },
+      {
+        "id": "C.3",
+        "title": "Plateau Montagne <i class=\"icon-shield\">L</i>",
+        "topics": [
+          {
+            "id": "C.3.1",
+            "title": "Modifications de mise en place.",
+            "text": "Placez les 6 marqueurs de chemin fermé sur les 6 chemins plus foncés creusés dans la terre. Placez la Tour dans la clairière centrale représentant deux tours."
+          },
+          {
+            "id": "C.3.2",
+            "title": "Chemins fermés.",
+            "text": "Un chemin recouvert d'un marqueur de chemin fermé est un <mark>chemin fermé</mark>. Les clairières reliées par un chemin fermé ne sont pas adjacentes, et des pièces <i>(comme les Bandits des Grands Chemins)</i>, ne peuvent pas être placées sur des chemins fermés. Les chemins fermés encadrent et divisent les bois comme s’il s’agissait de chemins <i>(le Vagabond peut donc se faufiler d'un bois à l’autre à travers ce chemin)</i>."
+          },
+          {
+            "id": "C.3.3",
+            "title": "Retirer des chemins fermés.",
+            "text": "Une fois par tour lors du Jour, un joueur peut dépenser une carte pour retirer un marqueur de chemin fermé de la partie définitivement et marquer 1 point de victoire. Pour le retirer, ce joueur doit posséder au moins 1 pièce de faction dans l’une ou l’autre des clairières reliées par le marqueur de chemin fermé."
+          },
+          {
+            "id": "C.3.4",
+            "title": "Le Col et la Tour.",
+            "text": "Le <mark>Col</mark> est la clairière marquée par la Tour. À la fin du Crépuscule d'un joueur, si celui-ci contrôle le Col, il marque 1 point de victoire."
+          },
+          {
+            "id": "C.3.5",
+            "title": "Bois.",
+            "text": "Toutes les zones du plateau Montagne fermées par des chemins et des clairières sont des bois (<a href=\"#2.4\">2.4</a>), que des arbres y soient représentés ou non."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "D",
+    "type": "appendice",
+    "title": "Vagabonds",
+    "subsections": [
+      {
+        "id": "D.1",
+        "title": "Voleur",
+        "topics": [
+          {
+            "id": "D.1.1",
+            "title": "Objets de départ.",
+            "text": "Commencez avec <i class=\"icon-item\">M</i>, <i class=\"icon-item\">F</i>, <i class=\"icon-item\">T</i>, <i class=\"icon-item\">S</i>."
+          },
+          {
+            "id": "D.1.2",
+            "title": "Action spéciale&nbsp;: Larcin.",
+            "text": "Épuisez une <i class=\"icon-item\">F</i> pour prendre une carte au hasard dans la main d’un joueur de votre clairière."
+          }
+        ]
+      },
+      {
+        "id": "D.2",
+        "title": "Bricoleur",
+        "topics": [
+          {
+            "id": "D.2.1",
+            "title": "Objets de départ.",
+            "text": "Commencez avec <i class=\"icon-item\">M</i>, <i class=\"icon-item\">F</i>, <i class=\"icon-item\">B</i>, <i class=\"icon-item\">H</i>."
+          },
+          {
+            "id": "D.2.2",
+            "title": "Action spéciale&nbsp;: Travailleur.",
+            "text": "Épuisez une <i class=\"icon-item\">F</i> pour prendre une carte de la défausse de la même couleur que votre clairière. <i>(Vous pouvez toujours prendre une carte Oiseau.)</i>"
+          }
+        ]
+      },
+      {
+        "id": "D.3",
+        "title": "Rôdeur",
+        "topics": [
+          {
+            "id": "D.3.1",
+            "title": "Objets de départ.",
+            "text": "Commencez avec <i class=\"icon-item\">M</i>, <i class=\"icon-item\">F</i>, <i class=\"icon-item\">C</i>, <i class=\"icon-item\">S</i>."
+          },
+          {
+            "id": "D.3.2",
+            "title": "Action spéciale&nbsp;: Refuge.",
+            "text": "Épuisez 1 <i class=\"icon-item\">F</i> pour réparer 3 objets. Mettez ensuite immédiatement fin au Jour et passez au Crépuscule."
+          }
+        ]
+      },
+      {
+        "id": "D.4",
+        "title": "Miséreux <i class=\"icon-shield\">X</i>",
+        "topics": [
+          {
+            "id": "D.4.1",
+            "title": "Objets de départ.",
+            "text": "Commencez avec <i class=\"icon-item\">X</i>, <i class=\"icon-item\">F</i>, <i class=\"icon-item\">M</i>."
+          },
+          {
+            "id": "D.4.2",
+            "title": "Action spéciale&nbsp;: Provocation.",
+            "text": "Épuisez une <i class=\"icon-item\">F</i> pour initier un combat dans votre clairière. Vous choisissez l’attaquant et le défenseur, ainsi que l’ordre dans lequel chacun retire des bâtiments et des jetons. Vous retirez également ces pièces. <i>(Marquez 1 point de victoire par bâtiment ou jeton de chaque joueur retiré, ainsi que par pièce hostile des joueurs retirée.)</i>"
+          }
+        ]
+      },
+      {
+        "id": "D.5",
+        "title": "Médiateur <i class=\"icon-shield\">X</i>",
+        "topics": [
+          {
+            "id": "D.5.1",
+            "title": "Objets de départ.",
+            "text": "Commencez avec <i class=\"icon-item\">M</i>, <i class=\"icon-item\">F</i>, <i class=\"icon-item\">S</i>, <i class=\"icon-item\">S</i>."
+          },
+          {
+            "id": "D.5.2",
+            "title": "Action spéciale&nbsp;: Protection.",
+            "text": "Avant de lancer les dés pour un combat, le défenseur peut enrôler le Médiateur dans la clairière du combat. Le Médiateur marque 1 point de victoire et ajoute toutes ses <i class=\"icon-item\">S</i> intactes au maximum de pertes infligées par le défenseur. Le Médiateur ne peut pas s’enrôler lui-même ou être enrôlé contre lui-même."
+          }
+        ]
+      },
+      {
+        "id": "D.6",
+        "title": "Brigand <i class=\"icon-shield\">X</i>",
+        "topics": [
+          {
+            "id": "D.6.1",
+            "title": "Objets de départ.",
+            "text": "Commencez avec <i class=\"icon-item\">M</i>, <i class=\"icon-item\">M</i>, <i class=\"icon-item\">F</i>, <i class=\"icon-item\">C</i>."
+          },
+          {
+            "id": "D.6.2",
+            "title": "Action spéciale&nbsp;: Terre brûlée.",
+            "text": "Épuisez une <i class=\"icon-item\">F</i> et placez-la dans votre clairière. Retirez toutes les pièces adverses de cette clairière. Les pièces ne peuvent plus être placées ou déplacées dans la clairière avec la <i class=\"icon-item\">F</i>. <i>(Vous restez dans cette clairière. Une fois que vous en sortez, vous ne pouvez plus y entrer. La <i class=\"icon-item\">F</i> ne peut pas être retirée avec une carte «&nbsp;Faveur des…&nbsp;», car il ne s’agit pas d’une pièce adverse.)</i>"
+          }
+        ]
+      },
+      {
+        "id": "D.7",
+        "title": "Aventurier <i class=\"icon-shield\">B</i>",
+        "topics": [
+          {
+            "id": "D.7.1",
+            "title": "Objets de départ.",
+            "text": "Commencez avec <i class=\"icon-item\">M</i>, <i class=\"icon-item\">F</i>, <i class=\"icon-item\">H</i>."
+          },
+          {
+            "id": "D.7.2",
+            "title": "Action spéciale&nbsp;: Improvisation.",
+            "text": "Une fois par tour, lorsque vous effectuez l’action Quête, vous pouvez considérer un objet non épuisé comme s'il s’agissait de n'importe quel autre objet. Lorsque vous épuisez cet objet pour accomplir la quête, endommagez-le aussi."
+          }
+        ]
+      },
+      {
+        "id": "D.8",
+        "title": "Ronin <i class=\"icon-shield\">B</i>",
+        "topics": [
+          {
+            "id": "D.8.1",
+            "title": "Objets de départ.",
+            "text": "Commencez avec <i class=\"icon-item\">M</i>, <i class=\"icon-item\">M</i> <i class=\"icon-item\">F</i>, <i class=\"icon-item\">S</i>."
+          },
+          {
+            "id": "D.8.2",
+            "title": "Action spéciale&nbsp;: Frappe rapide.",
+            "text": "Vous pouvez épuiser une <i class=\"icon-item\">S</i> pour infliger 1 perte additionnelle au combat <i>(après avoir lancé les dés)</i>."
+          }
+        ]
+      },
+      {
+        "id": "D.9",
+        "title": "Chasseur <i class=\"icon-shield\">B</i>",
+        "topics": [
+          {
+            "id": "D.9.1",
+            "title": "Objets de départ.",
+            "text": "Commencez avec <i class=\"icon-item\">X</i>, <i class=\"icon-item\">F</i>, <i class=\"icon-item\">S</i>, <i class=\"icon-item\">C</i>."
+          },
+          {
+            "id": "D.9.2",
+            "title": "Action spéciale&nbsp;: Vol plané.",
+            "text": "Épuisez une <i class=\"icon-item\">F</i> pour déplacer uniquement votre pion Vagabond <i>(pas d’autres pièces)</i> dans n’importe quelle clairière <i>(même Hostile)</i> du plateau sans épuiser de <i class=\"icon-item\">M</i>."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "E",
+    "type": "appendice",
+    "title": "Nomades",
+    "subsections": [
+      {
+        "id": "E.1",
+        "title": "Gagner et perdre des Nomades",
+        "topics": [
+          {
+            "id": "E.1.1",
+            "title": "Gagner des Nomades de la réserve.",
+            "text": "Lorsque le marqueur de score d’un joueur entre dans une case avec un marqueur de Nomade, il le prend et le place sous son Crépuscule <i>(pour ne pas l’oublier)</i>. À la fin de son tour, il prend une carte Nomade de la réserve, lance le dé de supervision (<a href=\"#E.1.2\">E.1.2</a>) et retourne son marqueur de Nomade."
+          },
+          {
+            "id": "E.1.2",
+            "title": "Lancer le dé de supervision.",
+            "text": "Lorsqu’un joueur gagne une carte Nomade, il lance le dé de supervision et place autant de marqueurs de supervision sur la carte Nomade que le résultat du dé. Le joueur ne compte que les étoiles dorées s’il a le plus de points de victoire (ou qu’il est à égalité pour le plus de points de victoire). Sinon, il compte toutes les étoiles <i>(et ce même s’il a activé une carte Domination)</i>."
+          },
+          {
+            "id": "E.1.3",
+            "title": "Gagner le Nomade d'un autre joueur.",
+            "text": "À la fin de son tour, le joueur doit retirer un marqueur de supervision de chaque carte Nomade qu’il possède. Puis, pour chaque carte nomade qu'il supervise et qui ne possède plus de marqueur de supervision, il doit choisir un autre joueur <i>(il peut s'agir de celui avec le plus de points de victoire)</i> et lui donner cette carte ainsi qu'un marqueur Nomade. Chaque joueur ayant reçu une carte Nomade place le marqueur Nomade sous son Crépuscule (pour rappel) et lance immédiatement un dé de supervision (<a href=\"#E.1.2\">E.1.2</a>)."
+          }
+        ]
+      },
+      {
+        "id": "E.2",
+        "title": "Capacités et Actions",
+        "content": "<p>Les Nomades possèdent de nombreuses actions et capacités représentées par des icônes spécifiques. Les actions et capacités qui commencent par le terme «&nbsp;Superviseur&nbsp;» sont octroyées au joueur qui supervise le Nomade.</p>",
+        "topics": [
+          {
+            "id": "E.2.1",
+            "title": "Action de ralliement (<img class=\"inline-icon inline-icon-lg\" src=\"../src/assets/img/icon-action-when-hired.png\" alt=\"\">).",
+            "text": "Le superviseur doit effectuer cette action lorsqu’il obtient le Nomade."
+          },
+          {
+            "id": "E.2.2",
+            "title": "Capacité (<img class=\"inline-icon inline-icon-lg\" src=\"../src/assets/img/icon-ability.png\" alt=\"\">)",
+            "text": "Cette capacité est toujours active ou indique les moments où elle se déclenche."
+          },
+          {
+            "id": "E.2.3",
+            "title": "Action de début d’Aurore (<img class=\"inline-icon inline-icon-lg\" src=\"../src/assets/img/icon-action-start-of-birdsong.png\" alt=\"\">)",
+            "text": "Au début de son Aurore, le joueur qui supervise le Nomade peut ou doit effectuer cette action, en se référant à sa description."
+          },
+          {
+            "id": "E.2.4",
+            "title": "Action à effectuer une fois par Jour (<img class=\"inline-icon inline-icon-lg\" src=\"../src/assets/img/icon-action-once-per-daylight.png\" alt=\"\">)",
+            "text": "Le joueur qui supervise le Nomade peut effectuer cette action une fois par Jour."
+          }
+        ]
+      },
+      {
+        "id": "E.3",
+        "title": "Règles",
+        "topics": [
+          {
+            "id": "E.3.1",
+            "title": "Contrôle.",
+            "text": "Le superviseur d’un Nomade ne considère les pièces Nomades comme les siennes que pour déterminer le contrôle des clairières. <i>(Le superviseur peut contrôler une clairière sur laquelle il ne possède que des pièces Nomades.)</i> Les Nomades qui ne sont supervisés par aucun joueur peuvent contrôler une clairière comme s'ils étaient des joueurs (<a href=\"#2.5\">2.5</a>)."
+          },
+          {
+            "id": "E.3.2",
+            "title": "Adversaire.",
+            "text": "Un Nomade est considéré comme adversaire par tous les joueurs autres que son superviseur ou les joueurs ayant formé une coalition avec son superviseur."
+          },
+          {
+            "id": "E.3.3",
+            "title": "Pièces indépendantes.",
+            "text": "Les pièces Nomades ne sont pas des pièces de la faction du superviseur. <i>(Le Duché ne les considère donc pas comme des pièces du Duché qu'il pourrait utiliser pour rallier des ministres, les Gardiens ne peuvent pas les retirer pour Établir un camp, etc.)</i>"
+          },
+          {
+            "id": "E.3.4",
+            "title": "Actions indépendantes.",
+            "text": "Les actions Déplacement ou Combat d'un Nomade ne peuvent être effectuées qu’avec des pièces Nomades, et ne peuvent pas inclure de pièces du superviseur. Les Nomades ne peuvent pas effectuer d’actions d’une autre manière <i>(ils ne peuvent par exemple pas bénéficier des actions de Déplacement du superviseur, de la carte Directives erronnées, ou du Statut d’allié du Vagabond)</i>."
+          },
+          {
+            "id": "E.3.5",
+            "title": "Effets indépendants.",
+            "text": "Les Nomades ne peuvent pas utiliser les capacités de leur superviseur, de leurs effets persistants fabriqués, ni de leurs cartes Embuscade. <i>(Un Nomade ne peut donc pas utiliser Constructeur naval lorsqu’il se déplace, et les Bandits des Grands Chemins ne peuvent pas être placés sur une rivière. Le superviseur d’un Nomade ne peut pas jouer de carte Embuscade lorsqu’il combat avec le Nomade.)</i>"
+          },
+          {
+            "id": "E.3.6",
+            "title": "Pas de points pour les pièces retirées.",
+            "text": "Le superviseur d’un Nomade ne marque pas de points de victoire si son Nomade retire une pièce adverse <i>(en combat généralement)</i>. <i>(Les joueurs peuvent toujours marquer des points en retirant des bâtiments et des jetons Nomades, même lorsqu’ils sont le défenseur lors d’un combat contre un Nomade. Les joueurs marquent toujours des points normalement si les Prophètes du Soleil forcent les pièces de faction de ce joueur à se battre.)</i>"
+          },
+          {
+            "id": "E.3.7",
+            "title": "Règles étranges.",
+            "text": "Si vous déplacez un Nomade avec le Radeau, vous piochez 1 carte. Si vous déplacez des guerriers Nomades dans une clairière dans laquelle se trouve un jeton de Sympathie de l’Alliance, ou que vous retirez un jeton de Sympathie de l’Alliance grâce à un Nomade, cela déclenche leur Indignation. <i>(Ces effets se réfèrent à «&nbsp;un joueur qui déplace&nbsp;» ou «&nbsp;un joueur qui retire&nbsp;».)</i>"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "F",
+    "type": "appendice",
+    "title": "Monuments",
+    "subsections": [
+      {
+        "id": "F.1",
+        "title": "Règles Générales",
+        "topics": [
+          {
+            "id": "F.1.1",
+            "title": "Sécurité.",
+            "text": "Les Monuments ne peuvent pas être combattus, déplacés ou retirés, sauf mention contraire explicite sur la carte du Monument."
+          },
+          {
+            "id": "F.1.2",
+            "title": "Possession.",
+            "text": "Aucune faction ne possède les Monuments. Ce ne sont pas non plus des pièces adverses."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G",
+    "type": "appendice",
+    "title": "Glossaire",
+    "subsections": [
+      {
+        "id": "G.1",
+        "title": "",
+        "topics": [
+          {
+            "id": "G.1.1",
+            "title": "Adjacence.",
+            "text": "Une clairière est adjacente à toute autre clairière qui lui est reliée par un chemin. Un bois est adjacent à toute clairière qui le touche sans traverser un chemin imprimé, et adjacent à toute bois dont il est seulement séparé par un seul chemin, sauf sur le Lac (<a href=\"#C.2.4\">C.2.4</a>). <i class=\"icon-faction text-duchy\">D</i>"
+          },
+          {
+            "id": "G.1.2",
+            "title": "Adversaire.",
+            "text": "Tout autre joueur avec lequel vous n’avez pas formé de coalition (<a href=\"#9.2.8\">9.2.8</a>) ou tout Nomade qui se trouve dans la réserve ou qui est supervisé par un joueur adverse."
+          },
+          {
+            "id": "G.1.3",
+            "title": "Aire de jeu.",
+            "text": "Espace entourant votre plateau de faction. Les cartes qui s’y trouvent ne peuvent être dépensées, défaussées ou utilisées que conformément aux règles y faisant référence."
+          },
+          {
+            "id": "G.1.4",
+            "title": "Bâtiment.",
+            "text": "Pièce en carton carrée qui appartient à sa faction."
+          },
+          {
+            "id": "G.1.5",
+            "title": "Bord du plateau.",
+            "text": "La chaîne de clairières et de chemins qui déterminent les limites du plateau, y compris les Chemins fermés du plateau Montagne."
+          },
+          {
+            "id": "G.1.6",
+            "title": "Capacité.",
+            "text": "Effet persistant d’une faction comme indiqué au sommet de son plateau de faction et dans la section Règles et capacités de la faction, ou effet persistant d’un Nomade, comme indiqué sur sa carte Nomade (<a href=\"#E.2.2\">E.2.2</a>)."
+          },
+          { "id": "G.1.7", "title": "Chemin.", "text": "Ligne blanche reliant deux clairières." },
+          {
+            "id": "G.1.8",
+            "title": "Considérer.",
+            "text": "La chose indiquée prend les propriétés de la seconde chose indiquée. Lorsque vous considérez des pièces adverses comme les vôtres concernant le contrôle des clairières, ce ne sont pas des pièces adverses, mais elles sont toujours des pièces de factions appartenant à ce joueur adverse. <i>(Par exemple, le guerriers de la Compagnie de la Rivière que vous avez engagés comme mercenaires ne sont pas des pièces adverses, mais ce sont toujours de pièces de faction de la Compagnie.)</i>"
+          },
+          { "id": "G.1.9", "title": "Contrôle.", "text": "Voir <a href=\"#2.5\">2.5</a>." },
+          {
+            "id": "G.1.10",
+            "title": "Défausser.",
+            "text": "Placer la carte indiquée dans la défausse commune (<a href=\"#2.1\">2.1</a>). S’il s’agit d'une carte Domination, la placer à côté du plateau à la place (<a href=\"#3.3.3\">3.3.3</a>). <i class=\"icon-faction text-cult\">L</i>"
+          },
+          {
+            "id": "G.1.11",
+            "title": "Dépenser.",
+            "text": "Voir <mark>Défausser</mark>. <i>(Ces termes sont interchangeables, mais dépenser est utilisé lorsqu’un choix peut être fait entre plusieurs pièces.)</i>"
+          },
+          {
+            "id": "G.1.12",
+            "title": "Échanger.",
+            "text": "Intervertir l’emplacement des deux pièces indiquées. <i>(Cet effet ignore les restriction des effets <mark>déplacer</mark> et <mark>placer</mark>, telles que les Pièges des Corvidés et le Donjon de la Marquise.)</i>"
+          },
+          {
+            "id": "G.1.13",
+            "title": "Effet.",
+            "text": "Tout ce qui modifie la partie ou les règles, y compris les effets persistants, les capacités de faction et les actions."
+          },
+          {
+            "id": "G.1.14",
+            "title": "Emplacement.",
+            "text": "Case blanche dans une clairière (<a href=\"#2.2.3\">2.2.3</a>)."
+          },
+          { "id": "G.1.15", "title": "Forcer.", "text": "Voir <a href=\"#1.5.5\">1.5.5</a>." },
+          {
+            "id": "G.1.16",
+            "title": "Bois.",
+            "text": "Zone du plateau entourée de chemins et de clairières."
+          },
+          {
+            "id": "G.1.17",
+            "title": "Guerrier.",
+            "text": "Figurine de bois qui appartient à sa faction. <i>(Le pion Vagabond n’est pas un guerrier et ne peut pas être retiré.)</i>"
+          },
+          {
+            "id": "G.1.18",
+            "title": "Jeton.",
+            "text": "Pièce en carton ronde qui appartient à sa faction."
+          },
+          {
+            "id": "G.1.19",
+            "title": "Montrer.",
+            "text": "Laisser le joueur indiqué voir la pièce indiquée."
+          },
+          { "id": "G.1.20", "title": "Ne Peut Pas.", "text": "Voir <a href=\"#1.1.2\">1.1.2</a>." },
+          {
+            "id": "G.1.21",
+            "title": "Objet.",
+            "text": "Pièce en carton carrée montrant un objet (<i class=\"icon-item\">M</i>, <i class=\"icon-item\">S</i>, <i class=\"icon-item\">C</i>, etc.) qui n’appartient à aucune faction."
+          },
+          {
+            "id": "G.1.22",
+            "title": "Pièce.",
+            "text": "Tout composant&nbsp;: bâtiment, jeton, guerrier, pion, objet, marqueur, et ainsi de suite."
+          },
+          {
+            "id": "G.1.23",
+            "title": "Pièce adverse.",
+            "text": "Pièce de faction d’un adversaire ou pièce Nomade d’un Nomade adverse, sauf si vous considérez cette pièce comme une des vôtres concernant le contrôle de clairière <i>(Mercenaires de la Compagnie de la Rivière, Nomades supervisés, etc)</i>. <i>(Les Objets ne peuvent pas être des pièces adverse.)</i>"
+          },
+          {
+            "id": "G.1.24",
+            "title": "Pièce de faction.",
+            "text": "Tous les guerriers, pions, bâtiments et jetons listés au dos d’un plateau de faction. <i>(Les Objets ne sont pas des pièces de faction).</i> Voir <a href=\"#1.5.2\">1.5.2</a>."
+          },
+          {
+            "id": "G.1.25",
+            "title": "Piocher.",
+            "text": "Prendre la première carte de la pioche commune (<a href=\"#2.1\">2.1</a>)."
+          },
+          {
+            "id": "G.1.26",
+            "title": "Pion.",
+            "text": "Figurine de bois qui appartient à sa faction."
+          },
+          {
+            "id": "G.1.27",
+            "title": "Placer.",
+            "text": "Prendre la pièce indiquée à l’endroit indiqué et la mettre à l’endroit indiqué. L’endroit où prendre la pièce n’est pas toujours indiqué, il faut alors la prendre dans sa réserve, ou prendre la pièce correspondante la plus à gauche de sa piste. <i>Mettre</i> signifie <i>Placer</i>."
+          },
+          { "id": "G.1.28", "title": "Plateau.", "text": "Voir <a href=\"#2.2\">2.2</a>." },
+          {
+            "id": "G.1.29",
+            "title": "Remplacer.",
+            "text": "Signifie <mark>retirer</mark> puis <mark>placer</mark>. Retirer la pièce indiquée et placer l’autre pièce indiquée à l’endroit où se trouvait la première pièce avant d’être retirée. Vous devez impérativement effectuer les deux étapes de l’action <mark>remplacer</mark> pour pouvoir la faire."
+          },
+          {
+            "id": "G.1.30",
+            "title": "Réserve.",
+            "text": "Ensemble de pièces qui ne se trouve pas sur un plateau de faction ni sur le plateau. La réserve d’objets est l’ensemble d’objets sur le plateau."
+          },
+          {
+            "id": "G.1.31",
+            "title": "Retirer.",
+            "text": "Prendre la pièce indiquée à l’endroit indiqué et la remettre à l’endroit indiqué. L’endroit où remettre la pièce n’est pas toujours indiqué, il faut alors la remettre dans la réserve de son propriétaire, la replacer sur la case vide la plus à droite de sa piste (le cas échéant) ou alors la retirer définitivement du jeu. <i>(Les objets doivent toujours être retirés définitivement.)</i>"
+          },
+          {
+            "id": "G.1.32",
+            "title": "Révéler.",
+            "text": "Placer la carte indiquée face visible dans votre aire de jeu. L’endroit d’où provient la carte n’est généralement pas indiqué, il s’agit alors d'une carte de votre main."
+          },
+          { "id": "G.1.33", "title": "Rivière.", "text": "Ligne bleue reliant deux clairières." },
+          {
+            "id": "G.1.34",
+            "title": "Ruine.",
+            "text": "Pièce recouvrant une case \"R\" dans une clairière (<a href=\"#2.2.4\">2.2.4</a>)."
           }
         ]
       }
