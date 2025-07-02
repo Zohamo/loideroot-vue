@@ -60,8 +60,11 @@ onBeforeRouteUpdate(async (to, from) => {
 </script>
 
 <template>
-  <main :class="section?.type" :style="`counter-set: section ${counterSetValue}`">
-    <LoiDeRootSommaire :hide="hideSommaire" @hide="hideSommaire = false" />
+  <main
+    :class="section?.type"
+    :style="{ counterSet: `section ${counterSetValue}`, overflow: 'hidden' }"
+  >
+    <LoiDeRootSommaire />
     <h1 class="mb-5">
       La Loi de Root
       <template v-if="isAppendice"><br /><small>Appendices</small></template>
