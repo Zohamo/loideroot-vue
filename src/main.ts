@@ -27,6 +27,14 @@ const MyPreset = definePreset(Nora, {
     },
   },
   components: {
+    datatable: {
+      headerCell: {
+        background: 'transparent',
+      },
+      row: {
+        background: 'transparent',
+      },
+    },
     dialog: {
       colorScheme: {
         light: {

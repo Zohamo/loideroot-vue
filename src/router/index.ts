@@ -33,9 +33,14 @@ const router = createRouter({
       component: () => import('../views/LoiDeRootSectionView.vue'),
     },
     {
-      path: '/factions/:slug?',
-      name: 'faction',
-      component: () => import('../views/FactionView.vue'),
+      path: '/factions',
+      name: 'factions',
+      component: () => import('../views/FactionsPreviewView.vue'),
+    },
+    {
+      path: '/factions/:slug',
+      name: 'faction-detail',
+      component: () => import('../views/FactionDetailView.vue'),
     },
   ],
 })

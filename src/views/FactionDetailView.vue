@@ -5,5 +5,7 @@ const slug = useRoute().params.slug
 </script>
 
 <template>
-  <p>{{ slug }}</p>
+  <main>
+    <p>{{ slug }}</p>
+  </main>
 </template>

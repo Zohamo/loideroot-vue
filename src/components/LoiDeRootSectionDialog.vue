@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { computed, ref, watchEffect } from 'vue'
+import { ref, useTemplateRef, watchEffect } from 'vue'
 import { RouterLink } from 'vue-router'
 import Dialog from 'primevue/dialog'
 import loiDeRoot from '@/assets/json/loi-de-root.json'
+import router from '@/router'
 
 const props = defineProps(['anchor'])
 defineEmits(['visible'])
@@ -13,6 +14,7 @@ const dialog = ref({
   content: '',
 })
 const rel = ref({})
+const contentRef = useTemplateRef('content')
 
 watchEffect(() => {
   if (props.anchor) {
@@ -41,6 +43,17 @@ watchEffect(() => {
       }
     }
     dialog.value.content = rel?.value?.content ?? rel?.value?.text
+    contentRef.value?.querySelectorAll('a').forEach((link) => {
+      const newAnchor = link.href.split('/')[link.href.split('/').length - 1]
+      link.href = `${newAnchor.split('.')[0]}#${newAnchor}`
+      /* link.onclick = () => {
+        dialog.value.visible = false
+        router.push({
+          path: `/loi-de-root/${newAnchor.split('.')[0]}`,
+          hash: `#${newAnchor}`,
+        })
+      } */
+    })
     dialog.value.visible = true
   }
 })
@@ -58,7 +71,7 @@ watchEffect(() => {
     <template #header>
       <div v-html="dialog.header" />
     </template>
-    <div v-html="dialog.content" />
+    <div ref="content" v-html="dialog.content" />
     <template #footer>
       <RouterLink
         class="italic"

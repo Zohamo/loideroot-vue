@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "slug": "marquise-de-chat",
+    "name": "Marquise de Chat",
+    "icon": "M",
+    "setup": "A",
+    "difficulty": 1,
+    "aggressivity": 2,
+    "hand": 2,
+    "craft": 2
+  },
+  {
+    "id": 2,
+    "slug": "dynasties-de-la-canopee",
+    "name": "Dynasties de la Canopée",
+    "icon": "E",
+    "setup": "B",
+    "difficulty": 1,
+    "aggressivity": 3,
+    "hand": 1,
+    "craft": 2
+  },
+  {
+    "id": 3,
+    "slug": "alliance-de-la-foret",
+    "name": "Alliance de la Forêt",
+    "icon": "A",
+    "setup": "C",
+    "difficulty": 3,
+    "aggressivity": 2,
+    "hand": 2,
+    "craft": 3
+  },
+  {
+    "id": 4,
+    "slug": "vagabond",
+    "name": "Vagabond",
+    "icon": "V",
+    "setup": "D/E",
+    "difficulty": 2,
+    "aggressivity": 2,
+    "hand": 2,
+    "craft": 1
+  },
+  {
+    "id": 5,
+    "slug": "culte-des-lezards",
+    "name": "Culte des Lézards",
+    "icon": "L",
+    "setup": "F",
+    "difficulty": 3,
+    "aggressivity": 2,
+    "hand": 3,
+    "craft": 3
+  },
+  {
+    "id": 6,
+    "slug": "compagnie-de-la-riviere",
+    "name": "Compagnie de la Rivière",
+    "icon": "O",
+    "setup": "G",
+    "difficulty": 3,
+    "aggressivity": 1,
+    "hand": 3,
+    "craft": 2
+  },
+  {
+    "id": 7,
+    "slug": "duche-souterrain",
+    "name": "Duché Souterrain",
+    "icon": "D",
+    "setup": "H",
+    "difficulty": 2,
+    "aggressivity": 2,
+    "hand": 3,
+    "craft": 2
+  },
+  {
+    "id": 8,
+    "slug": "conspiration-des-corvides",
+    "name": "Conspiration des Corvidés",
+    "icon": "C",
+    "setup": "I",
+    "difficulty": 1,
+    "aggressivity": 2,
+    "hand": 2,
+    "craft": 3
+  },
+  {
+    "id": 9,
+    "slug": "seigneur-des-cents",
+    "name": "Seigneur des Cents",
+    "icon": "H",
+    "setup": "J",
+    "difficulty": 2,
+    "aggressivity": 3,
+    "hand": 1,
+    "craft": 1
+  },
+  {
+    "id": 10,
+    "slug": "gardiens-de-fer",
+    "name": "Gardiens de Fer",
+    "icon": "K",
+    "setup": "K",
+    "difficulty": 3,
+    "aggressivity": 2,
+    "hand": 3,
+    "craft": 2
+  }
+]

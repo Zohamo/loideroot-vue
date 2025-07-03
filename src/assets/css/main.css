@@ -53,36 +53,49 @@
 }
 
 /* Typography */
-i[class^='icon-'] {
+i.icon-faction,
+i.icon-shield,
+i.icon-symbol,
+i.icon-item {
   font-style: normal;
 }
-.text-corvid {
-  color: #8e49aa;
-}
-.text-cult {
-  color: #f7f345;
-}
-.text-duchy {
-  color: #ecc0a3;
-}
-.text-eyrie {
-  color: #4668b7;
-}
-.text-keepers {
-  color: #888687;
-}
-.text-marquise {
+.text-marquise,
+.text-M {
   color: #e16a2b;
 }
-.text-riverfolk {
-  color: #66cbba;
+.text-eyrie,
+.text-E {
+  color: #4668b7;
 }
-.text-vagabond {
+.text-woodland,
+.text-A {
+  color: #5ebd44;
+}
+.text-vagabond,
+.text-V {
   color: #656263;
 }
-.text-warlord {
+.text-cult,
+.text-L {
+  color: #f7f345;
+}
+.text-riverfolk,
+.text-O {
+  color: #66cbba;
+}
+.text-duchy,
+.text-D {
+  color: #ecc0a3;
+}
+.text-corvid,
+.text-C {
+  color: #8e49aa;
+}
+.text-warlord,
+.text-H {
   color: #e2173d;
 }
-.text-woodland {
-  color: #5ebd44;
+.text-keepers,
+.text-K {
+  color: #888687;
 }
