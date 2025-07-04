@@ -2,7 +2,8 @@
 import DataTable from 'primevue/datatable'
 import Column from 'primevue/column'
 import Tag from 'primevue/tag'
-import factions from '@/assets/json/factions.json'
+import { FactionService } from '@/services/FactionService'
+import { onMounted, ref } from 'vue'
 
 function getSeverityLabel(val: number): string {
   switch (val) {
@@ -27,11 +28,17 @@ function getStyleTag(val: number): object {
       return { background: 'var(--p-primary-200)', color: 'var(--p-black)' }
   }
 }
+
+onMounted(() => {
+  FactionService.getFactions().then((data) => (factions.value = data))
+})
+
+const factions = ref()
 </script>
 
 <template>
   <main>
-    <DataTable v-i header="Factions" :value="factions" sortMode="multiple" size="small">
+    <DataTable header="Factions" :value="factions" sortMode="multiple" size="small">
       <Column field="name" class="font-bold" sortable>
         <template #body="slotProps">
           <span class="hidden md:inline-block lg:mr-2" v-text="slotProps.data.name" />
