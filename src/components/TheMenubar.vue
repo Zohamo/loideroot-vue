@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import Menubar from 'primevue/menubar'
+import { FactionService } from '@/services/FactionService'
 
 const items = ref([
   {
     label: 'Accueil',
-    icon: 'pi pi-home',
     route: '/',
   },
   {
@@ -14,7 +14,6 @@ const items = ref([
   },
   {
     label: 'La Loi de Root',
-    icon: 'pi pi-book',
     route: '/loi-de-root',
   },
   {
@@ -24,24 +23,26 @@ const items = ref([
         label: 'Aperçu',
         route: '/factions',
       },
-      {
-        label: 'Marquise de Chat',
-        route: '/factions/marquise-de-chat',
-      },
-      {
-        label: 'Dynasties de la Canopée',
-        route: '/factions/dynasties-de-la-canopee',
-      },
-      {
-        label: 'Alliance de la Forêt',
-        route: '/factions/alliance-de-la-foret',
-      },
     ],
   },
   {
     label: 'Rootbotique <i>(à venir)</i>',
   },
 ])
+
+onMounted(() => {
+  FactionService.getFactions().then((data) => {
+    for (const datum of data) {
+      items?.value
+        ?.find((item) => item.label === 'Factions')
+        .items?.push({
+          label: datum.name,
+          route: `/factions/${datum.slug}`,
+          icon: `<i class="icon-faction text-${datum.icon}">${datum.icon}</i>`,
+        })
+    }
+  })
+})
 </script>
 
 <template>
@@ -54,6 +55,7 @@ const items = ref([
         <router-link v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
           <a v-ripple :href="href" v-bind="props.action" @click="navigate">
             <span class="ml-2" v-html="item.label" />
+            <span v-if="item.icon" class="ml-2" v-html="item.icon" />
           </a>
         </router-link>
         <a v-else v-ripple class="flex items-center" v-bind="props.action">
