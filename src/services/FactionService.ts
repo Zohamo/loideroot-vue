@@ -7,4 +7,7 @@ export const FactionService = {
   getFactions() {
     return Promise.resolve(this.getFactionsData())
   },
+  getFaction(slug: string) {
+    return Promise.resolve(this.getFactionsData().find((datum) => datum.slug === slug))
+  },
 }
