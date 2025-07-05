@@ -425,6 +425,7 @@
   {
     "id": "6",
     "type": "faction",
+    "faction": "marquise-de-chat",
     "title": "Marquise de Chat <i class=\"icon-faction text-marquise\">M</i>",
     "subsections": [
       {
@@ -540,6 +541,7 @@
   {
     "id": "7",
     "type": "faction",
+    "faction": "dynasties-de-la-canopee",
     "title": "Dynasties de la Canopée <i class=\"icon-faction text-eyrie\">E</i>",
     "subsections": [
       {
@@ -743,6 +745,7 @@
   {
     "id": "8",
     "type": "faction",
+    "faction": "alliance-de-la-foret",
     "title": "Alliance de la Forêt <i class=\"icon-faction text-woodland\">A</i>",
     "subsections": [
       {
@@ -947,6 +950,7 @@
   {
     "id": "9",
     "type": "faction",
+    "faction": "vagabond",
     "title": "Vagabond <i class=\"icon-faction text-vagabond\">V</i>",
     "subsections": [
       {
@@ -1257,6 +1261,7 @@
   {
     "id": "10",
     "type": "faction",
+    "faction": "culte-des-lezards",
     "title": "Culte des Lézards <i class=\"icon-faction text-cult\">L</i>",
     "subsections": [
       {
@@ -1419,6 +1424,7 @@
   {
     "id": "11",
     "type": "faction",
+    "faction": "compagnie-de-la-riviere",
     "title": "Compagnie de la Rivière <i class=\"icon-faction text-riverfolk\">O</i>",
     "subsections": [
       {
@@ -1656,6 +1662,7 @@
   {
     "id": "12",
     "type": "faction",
+    "faction": "duche-souterrain",
     "title": "Duché Souterrain <i class=\"icon-faction text-duchy\">D</i>",
     "subsections": [
       {
@@ -1854,6 +1861,7 @@
   {
     "id": "13",
     "type": "faction",
+    "faction": "conspiration-des-corvides",
     "title": "Conspiration des Corvidés <i class=\"icon-faction text-corvid\">C</i>",
     "subsections": [
       {
@@ -2009,6 +2017,7 @@
   {
     "id": "14",
     "type": "faction",
+    "faction": "seigneur-des-cents",
     "title": "Seigneur des Cents <i class=\"icon-faction text-warlord\">H</i>",
     "subsections": [
       {
@@ -2212,6 +2221,7 @@
   {
     "id": "15",
     "type": "faction",
+    "faction": "gardiens-de-fer",
     "title": "Gardiens de Fer <i class=\"icon-faction text-keepers\">K</i>",
     "subsections": [
       {

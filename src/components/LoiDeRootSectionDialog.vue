@@ -3,7 +3,6 @@ import { ref, useTemplateRef, watchEffect } from 'vue'
 import { RouterLink } from 'vue-router'
 import Dialog from 'primevue/dialog'
 import loiDeRoot from '@/assets/json/loi-de-root.json'
-import router from '@/router'
 
 const props = defineProps(['anchor'])
 defineEmits(['visible'])
@@ -46,13 +45,6 @@ watchEffect(() => {
     contentRef.value?.querySelectorAll('a').forEach((link) => {
       const newAnchor = link.href.split('/')[link.href.split('/').length - 1]
       link.href = `${newAnchor.split('.')[0]}#${newAnchor}`
-      /* link.onclick = () => {
-        dialog.value.visible = false
-        router.push({
-          path: `/loi-de-root/${newAnchor.split('.')[0]}`,
-          hash: `#${newAnchor}`,
-        })
-      } */
     })
     dialog.value.visible = true
   }

@@ -5,30 +5,6 @@ import Tag from 'primevue/tag'
 import { FactionService } from '@/services/FactionService'
 import { onMounted, ref } from 'vue'
 
-function getSeverityLabel(val: number): string {
-  switch (val) {
-    case 3:
-      return 'Elevée'
-    case 2:
-      return 'Modérée'
-    case 1:
-    default:
-      return 'Faible'
-  }
-}
-
-function getStyleTag(val: number): object {
-  switch (val) {
-    case 3:
-      return { background: 'var(--p-primary-700)' }
-    case 2:
-      return { background: 'var(--p-primary-500)', color: 'var(--p-black)' }
-    case 1:
-    default:
-      return { background: 'var(--p-primary-200)', color: 'var(--p-black)' }
-  }
-}
-
 onMounted(() => {
   FactionService.getFactions().then((data) => (factions.value = data))
 })
@@ -53,32 +29,32 @@ const factions = ref()
       <Column field="difficulty" header="Difficulté" class="text-center" sortable>
         <template #body="slotProps">
           <Tag
-            :value="getSeverityLabel(slotProps.data.difficulty)"
-            :style="getStyleTag(slotProps.data.difficulty)"
+            :value="FactionService.getSeverityLabel(slotProps.data.difficulty)"
+            :style="FactionService.getStyleTag(slotProps.data.difficulty)"
           />
         </template>
       </Column>
       <Column field="aggressivity" header="Aggressivité" class="text-center" sortable>
         <template #body="slotProps">
           <Tag
-            :value="getSeverityLabel(slotProps.data.aggressivity)"
-            :style="getStyleTag(slotProps.data.aggressivity)"
+            :value="FactionService.getSeverityLabel(slotProps.data.aggressivity)"
+            :style="FactionService.getStyleTag(slotProps.data.aggressivity)"
           />
         </template>
       </Column>
       <Column field="hand" header="Main de cartes" class="text-center" sortable>
         <template #body="slotProps">
           <Tag
-            :value="getSeverityLabel(slotProps.data.hand)"
-            :style="getStyleTag(slotProps.data.hand)"
+            :value="FactionService.getSeverityLabel(slotProps.data.hand)"
+            :style="FactionService.getStyleTag(slotProps.data.hand)"
           />
         </template>
       </Column>
       <Column field="craft" header="Fabrication" class="text-center" sortable>
         <template #body="slotProps">
           <Tag
-            :value="getSeverityLabel(slotProps.data.craft)"
-            :style="getStyleTag(slotProps.data.craft)"
+            :value="FactionService.getSeverityLabel(slotProps.data.craft)"
+            :style="FactionService.getStyleTag(slotProps.data.craft)"
           />
         </template>
       </Column>
