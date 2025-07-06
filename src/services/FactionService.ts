@@ -4,6 +4,28 @@ export const FactionService = {
   getFactionsData() {
     return Factions
   },
+  getPreviousFactionData(slug: string) {
+    const currIdx = this.getFactionsData().findIndex((datum) => datum.slug === slug)
+    if (currIdx < 1) {
+      return {}
+    }
+    const prevFaction = this.getFactionsData()[currIdx - 1]
+    return {
+      title: prevFaction.name,
+      route: `/factions/${prevFaction.slug}`,
+    }
+  },
+  getNextFactionData(slug: string) {
+    const currIdx = this.getFactionsData().findIndex((datum) => datum.slug === slug)
+    if (currIdx > this.getFactionsData().length) {
+      return {}
+    }
+    const nextFaction = this.getFactionsData()[currIdx + 1]
+    return {
+      title: nextFaction.name,
+      route: `/factions/${nextFaction.slug}`,
+    }
+  },
   getFactions() {
     return Promise.resolve(this.getFactionsData())
   },

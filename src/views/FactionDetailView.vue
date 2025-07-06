@@ -1,14 +1,19 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { onBeforeRouteUpdate, useRoute, RouterLink } from 'vue-router'
 import { FactionService } from '@/services/FactionService'
 import LoiDeRoot from '@/assets/json/loi-de-root.json'
 import Tag from 'primevue/tag'
+import TheBottomNavigation from '@/components/TheBottomNavigation.vue'
 
 const slug = ref(useRoute().params.slug)
 const faction = ref()
 const loiDeRootSectionId = ref()
 const description = ref()
+/** Previous section (for navigation). */
+const prev = computed(() => FactionService.getPreviousFactionData(slug.value))
+/** Next section (for navigation). */
+const next = computed(() => FactionService.getNextFactionData(slug.value))
 
 const initFaction = () => {
   FactionService.getFaction(slug.value)
@@ -88,4 +93,5 @@ onBeforeRouteUpdate(async (to, from) => {
       </p>
     </main>
   </main>
+  <TheBottomNavigation :prev="prev" :next="next" />
 </template>
