@@ -25,9 +25,6 @@ const items = ref([
       },
     ],
   },
-  {
-    label: 'Rootbotique <i>(à venir)</i>',
-  },
 ])
 
 onMounted(() => {
