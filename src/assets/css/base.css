@@ -45,6 +45,7 @@
   em,
   i {
     font-family: 'root-text-italic', serif;
+    font-style: normal;
   }
   mark {
     background-color: transparent;
