@@ -2,6 +2,10 @@
 
 ## [0.1.1]
 
+### Changed
+
+- Home: content
+
 ### Fixed
 
 - type issues

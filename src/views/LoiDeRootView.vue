@@ -26,10 +26,10 @@ const next = ref(loiDeRoot.find((section) => section.id == '1'))
         >
       </p>
       <p>
-        <i>Root</i> contient deux livrets&nbsp;: ce livret de référence et le livret
+        <!-- <i>Root</i> contient deux livrets&nbsp;: ce livret de référence et le livret
         d’apprentissage. Si vous préférez apprendre à jouer sur le ton de la conversation avec de
         nombreux exemples, lisez le guide d’apprentissage. Si vous préférez apprendre à partir de
-        règles définies, formelles et concises, lisez la Loi de Root.<br />Ces explications vous
+        règles définies, formelles et concises, lisez la Loi de Root.<br /> -->Ces explications vous
         aideront à interpréter la Loi.
       </p>
       <div class="mb-3">
