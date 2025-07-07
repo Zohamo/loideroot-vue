@@ -3,6 +3,7 @@ import { ref, useTemplateRef, watchEffect } from 'vue'
 import { RouterLink } from 'vue-router'
 import Dialog from 'primevue/dialog'
 import loiDeRoot from '@/assets/json/loi-de-root.json'
+import type { LoiDeRootItem, LoiDeRootSubitem, LoiDeRootSubsection, LoiDeRootTopic } from '@/types'
 
 const props = defineProps(['anchor'])
 defineEmits(['visible'])
@@ -12,7 +13,7 @@ const dialog = ref({
   header: '',
   content: '',
 })
-const rel = ref({})
+const rel = ref()
 const contentRef = useTemplateRef('content')
 
 watchEffect(() => {
@@ -23,19 +24,21 @@ watchEffect(() => {
     dialog.value.header = `<h2>${id}. ${rel.value.title}</h2>`
     if (arrAnchor.length > 1) {
       id += `.${arrAnchor[1]}`
-      rel.value = rel.value?.subsections?.find((subsection) => subsection.id == id)
+      rel.value = rel.value?.subsections?.find(
+        (subsection: LoiDeRootSubsection) => subsection.id == id,
+      )
       dialog.value.header += `<h3>${id}. ${rel.value.title}</h3>`
       if (arrAnchor.length > 2) {
         id += `.${arrAnchor[2]}`
-        rel.value = rel.value?.topics?.find((rel) => rel.id == id)
+        rel.value = rel.value?.topics?.find((topic: LoiDeRootTopic) => topic.id == id)
         dialog.value.header += `<strong>${id}. ${rel.value.title}</strong>`
         if (arrAnchor.length > 3) {
           id += `.${arrAnchor[3]}`
-          rel.value = rel.value?.items?.find((item) => item.id == id)
+          rel.value = rel.value?.items?.find((item: LoiDeRootItem) => item.id == id)
           dialog.value.header += `<br /><strong class="ml-2">${id}. ${rel.value.title}</strong>`
           if (arrAnchor.length > 4) {
             id += `.${arrAnchor[4]}`
-            rel.value = rel.value?.subitems?.find((subitem) => subitem.id == id)
+            rel.value = rel.value?.subitems?.find((subitem: LoiDeRootSubitem) => subitem.id == id)
             dialog.value.header += `<br /><strong class="ml-4">${id}. ${rel.value.title}</strong>`
           }
         }
@@ -67,7 +70,11 @@ watchEffect(() => {
     <template #footer>
       <RouterLink
         class="italic"
-        :to="{ path: `/loi-de-root/${anchor.split('.')[0]}`, hash: `#${anchor}` }"
+        :to="{
+          name: 'loi-de-root-section',
+          params: { id: anchor.split('.')[0] },
+          hash: `#${anchor}`,
+        }"
         @click="dialog.visible = false"
         >Aller à {{ anchor }}. <span v-html="rel.title" /> <i class="pi pi-arrow-right ml-2"
       /></RouterLink>

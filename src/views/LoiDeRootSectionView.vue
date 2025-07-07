@@ -7,7 +7,7 @@ import LoiDeRootSectionContent from '@/components/LoiDeRootSectionContent.vue'
 import LoiDeRootSommaire from '@/components/LoiDeRootSommaire.vue'
 
 /** Current section's ID. */
-const id = ref(useRoute().params.id)
+const id = ref(useRoute().params.id as string)
 /** Index of the current section object inside the JSON array. */
 const currIdx = ref(-1)
 const section = ref(
@@ -39,22 +39,20 @@ const showContent = ref(true)
 const hideSommaire = ref(false)
 const transitionName = ref('slide-fade')
 
-onBeforeRouteUpdate(async (to, from) => {
-  if (to.params.id !== from.params.id) {
-    showContent.value = false
-    setTimeout(function () {
-      id.value = to.params.id
-      section.value = loiDeRoot.find((sec, idx) => {
-        if (sec.id == id.value) {
-          transitionName.value = idx < currIdx.value ? 'slide-fade-reverse' : 'slide-fade'
-          currIdx.value = idx
-          return true
-        }
-        return false
-      })
-      showContent.value = true
-    }, 1)
-  }
+onBeforeRouteUpdate(async (to) => {
+  showContent.value = false
+  setTimeout(function () {
+    id.value = to.params.id as string
+    section.value = loiDeRoot.find((sec, idx) => {
+      if (sec.id == id.value) {
+        transitionName.value = idx < currIdx.value ? 'slide-fade-reverse' : 'slide-fade'
+        currIdx.value = idx
+        return true
+      }
+      return false
+    })
+    showContent.value = true
+  }, 1)
   hideSommaire.value = true
 })
 </script>

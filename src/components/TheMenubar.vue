@@ -2,8 +2,9 @@
 import { onMounted, ref } from 'vue'
 import Menubar from 'primevue/menubar'
 import { FactionService } from '@/services/FactionService'
+import type { Faction } from '@/types'
 
-const items = ref([
+const items = ref<{ label: string; route?: string; items?: { label: string; route: string }[] }[]>([
   {
     label: 'Accueil',
     route: '/',
@@ -28,15 +29,19 @@ const items = ref([
 ])
 
 onMounted(() => {
-  FactionService.getFactions().then((data) => {
+  FactionService.getFactions().then((data: Faction[]) => {
     for (const datum of data) {
-      items?.value
-        ?.find((item) => item.label === 'Factions')
-        .items?.push({
-          label: datum.name,
-          route: `/factions/${datum.slug}`,
-          icon: `<i class="icon-faction text-${datum.icon}">${datum.icon}</i>`,
-        })
+      if (items.value) {
+        const factionsItem = items.value.find((item) => item.label === 'Factions')
+        if (factionsItem && factionsItem.items) {
+          factionsItem.items.push({
+            label:
+              datum.name +
+              (datum.icon ? `<i class="icon-faction text-${datum.icon}">${datum.icon}</i>` : ''),
+            route: `/factions/${datum.slug}`,
+          })
+        }
+      }
     }
   })
 })
@@ -52,7 +57,6 @@ onMounted(() => {
         <router-link v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
           <a v-ripple :href="href" v-bind="props.action" @click="navigate">
             <span class="ml-2" v-html="item.label" />
-            <span v-if="item.icon" class="ml-2" v-html="item.icon" />
           </a>
         </router-link>
         <a v-else v-ripple class="flex items-center" v-bind="props.action">

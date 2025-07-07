@@ -1,7 +1,7 @@
 import { definePreset } from '@primeuix/themes'
 import Nora from '@primeuix/themes/nora'
 
-const Root = definePreset(Nora, {
+export default definePreset(Nora, {
   semantic: {
     primary: {
       50: '{amber.50}',
@@ -29,22 +29,28 @@ const Root = definePreset(Nora, {
     dialog: {
       colorScheme: {
         light: {
-          background: '{amber.50}',
+          root: {
+            background: '{amber.50}',
+          },
         },
       },
     },
     drawer: {
       colorScheme: {
         light: {
-          background: '{amber.50}',
+          root: {
+            background: '{amber.50}',
+          },
         },
       },
     },
     menu: {
       colorScheme: {
         light: {
-          background: 'none',
-          borderColor: 'none',
+          root: {
+            background: 'none',
+            borderColor: 'none',
+          },
         },
       },
     },
@@ -63,5 +69,3 @@ const Root = definePreset(Nora, {
     },
   },
 })
-
-export default Root

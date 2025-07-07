@@ -6,7 +6,7 @@ import LoiDeRoot from '@/assets/json/loi-de-root.json'
 import Tag from 'primevue/tag'
 import TheBottomNavigation from '@/components/TheBottomNavigation.vue'
 
-const slug = ref(useRoute().params.slug)
+const slug = ref<string>(useRoute().params.slug as string)
 const faction = ref()
 const loiDeRootSectionId = ref()
 const description = ref()
@@ -14,6 +14,13 @@ const description = ref()
 const prev = computed(() => FactionService.getPreviousFactionData(slug.value))
 /** Next section (for navigation). */
 const next = computed(() => FactionService.getNextFactionData(slug.value))
+
+const specs = ref([
+  { key: 'difficulty', label: 'Difficulté' },
+  { key: 'aggressivity', label: 'Aggressivité' },
+  { key: 'hand', label: 'Main de cartes' },
+  { key: 'craft', label: 'Fabrication' },
+])
 
 const initFaction = () => {
   FactionService.getFaction(slug.value)
@@ -27,11 +34,13 @@ const initFaction = () => {
 
 onMounted(() => initFaction())
 
-onBeforeRouteUpdate(async (to, from) => {
-  if (to.params.slug !== from.params.slug) {
-    slug.value = to.params.slug
-    initFaction()
-  }
+onBeforeRouteUpdate(async (to) => {
+  slug.value = to.params.slug as string
+  faction.value = null
+  loiDeRootSectionId.value = null
+  description.value = null
+  window.scroll({ top: 0 })
+  initFaction()
 })
 </script>
 
@@ -48,39 +57,12 @@ onBeforeRouteUpdate(async (to, from) => {
       <div v-if="description" v-html="description" />
       <table>
         <tbody>
-          <tr>
-            <th>Difficulté</th>
+          <tr v-for="spec in specs" :key="spec.key">
+            <th>{{ spec.label }}</th>
             <td>
               <Tag
-                :value="FactionService.getSeverityLabel(faction.difficulty)"
-                :style="FactionService.getStyleTag(faction.difficulty)"
-              />
-            </td>
-          </tr>
-          <tr>
-            <th>Aggressivité</th>
-            <td>
-              <Tag
-                :value="FactionService.getSeverityLabel(faction.aggressivity)"
-                :style="FactionService.getStyleTag(faction.aggressivity)"
-              />
-            </td>
-          </tr>
-          <tr>
-            <th>Main de cartes</th>
-            <td>
-              <Tag
-                :value="FactionService.getSeverityLabel(faction.hand)"
-                :style="FactionService.getStyleTag(faction.hand)"
-              />
-            </td>
-          </tr>
-          <tr>
-            <th>Fabrication</th>
-            <td>
-              <Tag
-                :value="FactionService.getSeverityLabel(faction.craft)"
-                :style="FactionService.getStyleTag(faction.craft)"
+                :value="FactionService.getSeverityLabel(faction[spec.key])"
+                :style="FactionService.getStyleTag(faction[spec.key])"
               />
             </td>
           </tr>

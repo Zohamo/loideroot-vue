@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1]
+
+### Fixed
+
+- type issues
+- router links
+
 ## [0.1.0] - 2025-07-06
 
 ### Added

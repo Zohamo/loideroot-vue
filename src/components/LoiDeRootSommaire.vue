@@ -8,12 +8,13 @@ import { onBeforeRouteUpdate } from 'vue-router'
 
 const visible = ref(false)
 
-const items = ref(
-  loiDeRoot.map((section) => {
-    return { label: `${section.id}. ${section.title}`, route: `/loi-de-root/${section.id}` }
-  }),
+const items = ref<{ label: string; route: { name: string; params?: { id: string } } }[]>(
+  loiDeRoot.map((section) => ({
+    label: `${section.id}. ${section.title}`,
+    route: { name: 'loi-de-root-section', params: { id: section.id } },
+  })),
 )
-items.value.unshift({ label: 'Lire la Loi', route: '/loi-de-root' })
+items.value.unshift({ label: 'Lire la Loi', route: { name: 'loi-de-root' } })
 
 onBeforeRouteUpdate(async () => {
   visible.value = false

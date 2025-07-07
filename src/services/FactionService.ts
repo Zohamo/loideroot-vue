@@ -1,7 +1,8 @@
 import Factions from '@/assets/json/factions.json'
+import type { Faction } from '@/types'
 
 export const FactionService = {
-  getFactionsData() {
+  getFactionsData(): Array<Faction> {
     return Factions
   },
   getPreviousFactionData(slug: string) {

@@ -1,8 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import LoiDeRootView from '../views/LoiDeRootView.vue'
+import HomeView from '@/views/HomeView.vue'
+import LoiDeRootView from '@/views/LoiDeRootView.vue'
+import LoiDeRootSectionView from '@/views/LoiDeRootSectionView.vue'
+import FactionsPreviewView from '@/views/FactionsPreviewView.vue'
+import FactionDetailView from '@/views/FactionDetailView.vue'
 
-const router = createRouter({
+export default createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
@@ -28,21 +31,19 @@ const router = createRouter({
       component: LoiDeRootView,
     },
     {
-      path: '/loi-de-root/:id/:slug?',
+      path: '/loi-de-root/:id',
       name: 'loi-de-root-section',
-      component: () => import('../views/LoiDeRootSectionView.vue'),
+      component: LoiDeRootSectionView,
     },
     {
       path: '/factions',
       name: 'factions',
-      component: () => import('../views/FactionsPreviewView.vue'),
+      component: FactionsPreviewView,
     },
     {
       path: '/factions/:slug',
       name: 'faction-detail',
-      component: () => import('../views/FactionDetailView.vue'),
+      component: FactionDetailView,
     },
   ],
 })
-
-export default router

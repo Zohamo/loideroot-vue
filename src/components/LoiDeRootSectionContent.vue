@@ -3,37 +3,38 @@ import { onMounted, ref, useTemplateRef } from 'vue'
 import LoiDeRootSectionDialog from './LoiDeRootSectionDialog.vue'
 
 defineProps(['section'])
-const showAnchor = ref('')
-const sectionRef = useTemplateRef('section')
-const subsectionRefs = useTemplateRef('subsections')
-const topicRefs = useTemplateRef('topics')
-const itemRefs = useTemplateRef('items')
-const subitemRefs = useTemplateRef('subitems')
+const showAnchor = ref()
+const sectionRef = useTemplateRef<HTMLElement[]>('section')
+const subsectionRefs = useTemplateRef<HTMLElement[]>('subsections')
+const topicRefs = useTemplateRef<HTMLElement[]>('topics')
+const itemRefs = useTemplateRef<HTMLElement[]>('items')
+const subitemRefs = useTemplateRef<HTMLElement[]>('subitems')
 
 onMounted(() => {
-  replaceLinksByButtons(sectionRef.value)
-  subsectionRefs?.value
-    ?.concat(topicRefs.value, itemRefs.value, subitemRefs.value)
-    .forEach((content: object) => {
-      replaceLinksByButtons(content)
-    })
+  ;[
+    ...(sectionRef.value && sectionRef.value ? [sectionRef.value] : []),
+    ...(subsectionRefs.value ?? []),
+    ...(topicRefs.value ?? []),
+    ...(itemRefs.value ?? []),
+    ...(subitemRefs.value ?? []),
+  ].forEach((content) => {
+    replaceLinksByButtons(content as HTMLElement | null)
+  })
 })
 
-function replaceLinksByButtons(content: HTMLDivElement) {
-  if (content === null) {
-    return
+function replaceLinksByButtons(content: HTMLElement | null) {
+  if (content) {
+    content.querySelectorAll('a').forEach((link) => {
+      const button = document.createElement('button')
+      button.type = 'button'
+      button.className = 'p-button p-component p-button-link p-0'
+      button.innerHTML = link.innerHTML
+      button.onclick = () => {
+        showAnchor.value = link.href.split('#')[1]
+      }
+      link.replaceWith(button)
+    })
   }
-  const links = content.querySelectorAll('a')
-  links.forEach((link) => {
-    const button = document.createElement('button')
-    button.type = 'button'
-    button.className = 'p-button p-component p-button-link p-0'
-    button.innerHTML = link.innerHTML
-    button.onclick = () => {
-      showAnchor.value = link.href.split('#')[1]
-    }
-    link.replaceWith(button)
-  })
 }
 </script>
 
