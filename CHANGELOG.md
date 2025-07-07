@@ -2,12 +2,18 @@
 
 ## [0.1.1]
 
+### Added
+
+- config: vite-plugin-pwa
+
 ### Changed
 
+- config: npm update
 - Home: content
 
 ### Fixed
 
+- config: base directory
 - type issues
 - router links
 
