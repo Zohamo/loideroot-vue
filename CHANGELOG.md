@@ -5,6 +5,7 @@
 ### Added
 
 - config: vite-plugin-pwa
+- factions: description
 
 ### Changed
 

@@ -28,7 +28,6 @@ const initFaction = () => {
     .then(() => {
       const loiDeRootSection = LoiDeRoot.find((section) => section?.faction === faction.value.slug)
       loiDeRootSectionId.value = loiDeRootSection?.id
-      description.value = loiDeRootSection?.subsections[0].content
     })
 }
 
@@ -54,7 +53,7 @@ onBeforeRouteUpdate(async (to) => {
         alt="Faction character"
         style="float: left"
       />
-      <div v-if="description" v-html="description" />
+      <div v-if="faction.description" v-html="faction.description" />
       <table>
         <tbody>
           <tr v-for="spec in specs" :key="spec.key">

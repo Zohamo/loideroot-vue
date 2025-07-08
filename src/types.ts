@@ -4,7 +4,7 @@ export interface Faction {
   name: string // 'Vagabond', 'Marquise de Cat', etc.
   icon: string // Letter representing the faction, e.g. 'V', 'M', etc.
   subtitle?: string // Short description of the faction
-  description?: string // HTML content describing the faction
+  description: string // HTML content describing the faction
   tips?: string // HTML content with tips for playing the faction
   setup: string // 'A', 'B', 'C', etc. Setup letter
   difficulty: number // 1-3, where 1 is easiest and 3 is hardest
