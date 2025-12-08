@@ -4,6 +4,12 @@
 
 - fix faction img path: move assets to root
 
+## [0.1.3] - 2025-12-08
+
+### Changed
+
+- factionDetail: refactor adding component
+
 ## [0.1.2] - 2025-12-08
 
 ### Added

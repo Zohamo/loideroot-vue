@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
-import { onBeforeRouteUpdate, useRoute, RouterLink } from 'vue-router'
+import { onBeforeRouteUpdate, useRoute } from 'vue-router'
 import { FactionService } from '@/services/FactionService'
 import LoiDeRoot from '@/assets/json/loi-de-root.json'
-import Tag from 'primevue/tag'
 import TheBottomNavigation from '@/components/TheBottomNavigation.vue'
+import FactionDetail from '@/components/FactionDetail.vue'
 
 const slug = ref<string>(useRoute().params.slug as string)
 const faction = ref()
@@ -14,13 +14,6 @@ const description = ref()
 const prev = computed(() => FactionService.getPreviousFactionData(slug.value))
 /** Next section (for navigation). */
 const next = computed(() => FactionService.getNextFactionData(slug.value))
-
-const specs = ref([
-  { key: 'difficulty', label: 'Difficulté' },
-  { key: 'aggressivity', label: 'Aggressivité' },
-  { key: 'hand', label: 'Main de cartes' },
-  { key: 'craft', label: 'Fabrication' },
-])
 
 const initFaction = () => {
   FactionService.getFaction(slug.value)
@@ -45,34 +38,7 @@ onBeforeRouteUpdate(async (to) => {
 
 <template>
   <main>
-    <main v-if="faction">
-      <h2>{{ faction.name }}</h2>
-      <img
-        v-if="faction.img"
-        :src="`../src/assets/img/${faction.img}`"
-        alt="Faction character"
-        style="float: left"
-      />
-      <div v-if="faction.description" v-html="faction.description" />
-      <table>
-        <tbody>
-          <tr v-for="spec in specs" :key="spec.key">
-            <th>{{ spec.label }}</th>
-            <td>
-              <Tag
-                :value="FactionService.getSeverityLabel(faction[spec.key])"
-                :style="FactionService.getStyleTag(faction[spec.key])"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="text-center">
-        <RouterLink :to="{ path: `/loi-de-root/${loiDeRootSectionId}` }">
-          Loi de Root {{ loiDeRootSectionId }}. <span v-html="faction.name" />
-        </RouterLink>
-      </p>
-    </main>
+    <FactionDetail v-if="faction" :faction="faction" :loiDeRootSectionId="loiDeRootSectionId" />
   </main>
   <TheBottomNavigation :prev="prev" :next="next" />
 </template>

@@ -13,7 +13,7 @@ const factions = ref()
 </script>
 
 <template>
-  <main>
+  <div>
     <DataTable header="Factions" :value="factions" sortMode="multiple" size="small">
       <Column field="name" class="font-bold" sortable>
         <template #body="slotProps">
@@ -59,5 +59,5 @@ const factions = ref()
         </template>
       </Column>
     </DataTable>
-  </main>
+  </div>
 </template>
