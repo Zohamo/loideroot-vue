@@ -18,7 +18,7 @@ export const FactionService = {
   },
   getNextFactionData(slug: string) {
     const currIdx = this.getFactionsData().findIndex((datum) => datum.slug === slug)
-    if (currIdx > this.getFactionsData().length) {
+    if (currIdx >= this.getFactionsData().length - 1) {
       return {}
     }
     const nextFaction = this.getFactionsData()[currIdx + 1]

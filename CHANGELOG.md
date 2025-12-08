@@ -4,6 +4,12 @@
 
 - fix faction img path: move assets to root
 
+## [Unreleased]
+
+### Fixed
+
+- factionDetail: nav at first and last faction
+
 ## [0.1.3] - 2025-12-08
 
 ### Changed
