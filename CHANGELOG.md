@@ -1,5 +1,15 @@
 # Changelog
 
+## TODO
+
+- fix faction img path: move assets to root
+
+## [0.1.2] - 2025-12-08
+
+### Added
+
+- setup: standard + dynamic advanced
+
 ## [0.1.1] - 2025-07-08
 
 ### Added

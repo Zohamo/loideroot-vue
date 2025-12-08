@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
+import SetupView from '@/views/SetupView.vue'
 import LoiDeRootView from '@/views/LoiDeRootView.vue'
 import LoiDeRootSectionView from '@/views/LoiDeRootSectionView.vue'
 import FactionsPreviewView from '@/views/FactionsPreviewView.vue'
@@ -24,6 +25,11 @@ export default createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+    },
+    {
+      path: '/mise-en-place',
+      name: 'setup',
+      component: SetupView,
     },
     {
       path: '/loi-de-root',

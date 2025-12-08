@@ -11,7 +11,7 @@ const items = ref<{ label: string; route?: string; items?: { label: string; rout
   },
   {
     label: 'Mise en place',
-    route: '/loi-de-root/5',
+    route: '/mise-en-place',
   },
   {
     label: 'La Loi de Root',
